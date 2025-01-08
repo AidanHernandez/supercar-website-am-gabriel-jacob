@@ -3,6 +3,7 @@
 body {
     font-family: "Nixie One", system-ui;
     background-image: linear-gradient( #FDFFFB,#000000);
+    overflow-x: hidden;
 }
 
 
