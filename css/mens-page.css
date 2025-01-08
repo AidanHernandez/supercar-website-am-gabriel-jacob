@@ -2,352 +2,155 @@
  
 body {
     font-family: "Nixie One", system-ui;
-    background-image: linear-gradient( #FDFFFB,#000000);
+    
     overflow-x: hidden;
 }
 
-
-
-h5{
-    font-size: 8vh;
-    margin-top: 10%;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
- }
-
- .top {
+.content{
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+  height: 190vh;
+  width: 100%;
+  margin-top: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
- .top p {
-  font-size: 8vh;
-  color: black;
-  margin-top: 8%;
- }
-
- h6 {
-  color: black;
-  margin-left: auto;
-  margin-right: 43%;
-  font-size: 10vh;
- }
- 
-
-
-
- .new {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  order: 1;
- }
- 
+  flex-flow: column;
 
+  align-items: center;
+}
 
-.viewcart {
+.images {
+  height: 48vh;
+  width: 25vw;
+  margin-top: 5%;
+}
+
+.content > h2{
+  font-size: 10vh;
+}
+
+.viewcart{
+  font-size: 6vh;
   background-color: black;
   color: white;
-  height: 8.5vh;
-  width: 16vw;
-  font-size: 6vh;
-  text-align: center;
-}
-
-
-
- a.viewcart {
   text-decoration: none;
-  margin-top: 20%;
-  margin-left: 5%;
-  
- }
+}
 
- .images {
-    height: 60vh;
-    width: 25vw;
-    margin-top: 5%;
- }
-
- .exit {
-   margin-left: 90%;
- }
-
-
-/* row1 */
- .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 5%;
- }
-
- .box1 {
-    background-color: gray;
-    height: 80vh;
-    padding: 2%;
-    background-image: linear-gradient(#000000, #FDFFFB);
- }
-
- .box2 {
-    background-color: gray;
-    height: 80vh;
-    padding: 2%;
-    background-image: linear-gradient(#000000, #FDFFFB);
- }
-
-
-
- .underimg {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1%;
-    font-size: 3vh;
- }
-
-
- .last {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5%;
- }
-
-
-
-/* sizes */
- .s {
-    background-color: white;
-    width: 4vw;
-    height: 4vh;
-    font-size: 2vh;
-    text-align: center;
-    font-family: "Nixie One", system-ui;
- }
-
- .s:hover {
-   background-color: #6A6B6A;
- }
- .s:focus {
-   background-color: #6A6B6A;
- }
-
- .m:hover {
-   background-color: #6A6B6A;
- }
- .m:focus {
-   background-color: #6A6B6A;
- }
-
- .l:hover {
-   background-color: #6A6B6A;
- }
- .l:focus {
-   background-color: #6A6B6A;
- }
-
-
- .m {
-    background-color: white;
-    width: 4vw;
-    height: 4vh;
-    font-size: 2vh;
-    text-align: center;
-    font-family: "Nixie One", system-ui;
- }
-
- .l {
-    background-color: white;
-    width: 4vw;
-    height: 4vh;
-    font-size: 2vh;
-    text-align: center;
-    font-family: "Nixie One", system-ui;
- }
-
- .size {
-   display: flex;
-   justify-content: center;
-   margin-top: 4%;
- }
-/* end size */
-
-/* color opps */
- .color {
-   display: flex;
-   justify-content: center;
- }
-
- .white {
-   height: 6vh;
-   width: 3vw;
-   border-radius: 100%;
-   background-color: white;
-   color: white;
- }
- .black {
-   margin-left: 30%;
-   height: 6vh;
-   width: 3vw;
-   border-radius: 100%;
-   background-color: black;
-   color: black;
- }
-/* end color opps */
- .add {
-   width: 6vw;
-   height: 5vh;
-   background-color: black;
-   color: white;
-   font-size: 1.5vh;
-   margin-top: 3%;
-   font-family: "Nixie One", system-ui;
- }
-
-
-
- /* row2 */
- .row2 {
+.first{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.box3 {
+.box1 {
+  display: flex;
+  flex-flow: column;
   background-color: gray;
-  height: 80vh;
-  padding: 2%;
-  background-image: linear-gradient(#000000, #FDFFFB);
-}
-
-.box4 {
-  background-color: gray;
-  height: 80vh;
+  height: 62vh;
+  width: fit-content;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
 }
 
 
 
-.underimg2 {
+.size-select > button:first-of-type {
+  background-color: white;
+  width: 4vw;
+  height: 4vh;
+  font-size: 2vh;
+  text-align: center;
+  font-family: "Nixie One", system-ui;
+}
+
+.size-select > button:first-of-type:hover {
+ background-color: #6A6B6A;
+}
+.size-select > button:first-of-type:focus {
+ background-color: #6A6B6A;
+}
+
+
+
+
+
+.size-select > button:nth-of-type(2) {
+  background-color: white;
+  width: 4vw;
+  height: 4vh;
+  font-size: 2vh;
+  text-align: center;
+  font-family: "Nixie One", system-ui;
+}
+
+.size-select > button:nth-of-type(2):hover {
+ background-color: #6A6B6A;
+}
+.size-select > button:nth-of-type(2):focus {
+ background-color: #6A6B6A;
+}
+
+
+.size-select > button:last-of-type {
+  background-color: white;
+  width: 4vw;
+  height: 4vh;
+  font-size: 2vh;
+  text-align: center;
+  font-family: "Nixie One", system-ui;
+}
+
+.size-select > button:last-of-type:hover {
+ background-color: #6A6B6A;
+}
+.size-select > button:last-of-type:focus {
+ background-color: #6A6B6A;
+}
+
+.size-select{
+  margin-left: 15%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 1%;
+}
+
+.underimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underimg > p{
   font-size: 3vh;
 }
 
-
-.last2 {
+.color{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 5%;
+  width: 5vw;
+  height: 5vh;
 }
 
 
 
-/* sizing */
-.s2 {
+.color > button{
+  height: 5vh;
+  width: 50%;
+  border-radius: 100%;
+  border: #000000 3px solid;
+}
+
+.color > button:first-of-type{
   background-color: white;
-  width: 4vw;
-  height: 4vh;
-  font-size: 2vh;
-  text-align: center;
-  font-family: "Nixie One", system-ui;
 }
 
-.s2:hover {
- background-color: #6A6B6A;
-}
-.s2:focus {
- background-color: #6A6B6A;
+.color > button:last-of-type{
+  background-color: black;
+  border: #ffffff 3px solid;
 }
 
-.m2:hover {
- background-color: #6A6B6A;
-}
-.m2:focus {
- background-color: #6A6B6A;
+.final{
+  display: flex;
+  align-items: center;
 }
 
-.l2:hover {
- background-color: #6A6B6A;
-}
-.l2:focus {
- background-color: #6A6B6A;
-}
-
-
-.m2 {
-  background-color: white;
-  width: 4vw;
-  height: 4vh;
-  font-size: 2vh;
-  text-align: center;
-  font-family: "Nixie One", system-ui;
-}
-
-.l2 {
-  background-color: white;
-  width: 4vw;
-  height: 4vh;
-  font-size: 2vh;
-  text-align: center;
-  font-family: "Nixie One", system-ui;
-}
-
-.size2 {
- display: flex;
- justify-content: center;
- margin-top: 4%;
-}
-/* end sizing */
-.color2 {
- display: flex;
- justify-content: center;
-}
-
-.white2 {
- height: 6vh;
- width: 3vw;
- border-radius: 100%;
- background-color: white;
- color: white;
-}
-.black2 {
- margin-left: 30%;
- height: 6vh;
- width: 3vw;
- border-radius: 100%;
- background-color: black;
- color: black;
-}
-
-.add2 {
- width: 6vw;
- height: 5vh;
- background-color: black;
- color: white;
- font-size: 1.5vh;
- margin-top: 3%;
- font-family: "Nixie One", system-ui;
-}
-
-.changecolor {
-  background-image: linear-gradient(#000000, #FDFFFB);
-}
-
-.text {
-  color: white;
-}
-
-/* Popup container - can be anything you want */
 .popup {
   position: relative;
   display: inline-block;
@@ -356,11 +159,11 @@ h5{
   background-color: black;
   color: white;
   font-size: 1.5vh;
-  margin-top: 3%;
+  /* margin-top: 3%; */
   font-family: "Nixie One", system-ui;
+  margin-left: 30%;
   
 }
-
 
 .popup .popuptext {
  
@@ -391,50 +194,119 @@ h5{
   animation: FadeOut 1s;
 }
 
-.popup2 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  padding: 3%;
-  background-color: black;
-  color: white;
-  font-size: 1.5vh;
-  margin-top: 3%;
-  font-family: "Nixie One", system-ui;
-  
+
+.box2 {
+  display: flex;
+  flex-flow: column;
+  background-color: gray;
+  height: 62vh;
+  width: fit-content;
+  padding: 2%;
+  background-image: linear-gradient(#000000, #FDFFFB);
 }
 
-/* The actual popup */
-.popup2 .popuptext2 {
- 
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5rem;
+
+.second{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6%;
+  width: 100%;
+}
+
+.box3 {
+  display: flex;
+  flex-flow: column;
+  background-color: gray;
+  height: 62vh;
+  width: fit-content;
+  padding: 2%;
+  background-image: linear-gradient(#000000, #FDFFFB);
+}
+
+
+.box4 {
+  display: flex;
+  flex-flow: column;
+  background-color: gray;
+  height: 62vh;
+  width: fit-content;
+  padding: 2%;
+  background-image: linear-gradient(#000000, #FDFFFB);
+}
+
+
+
+
+
+
+.footer{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  color: white;
+  /* margin-bottom: 2%; */
+  background-color: black;
+  /* justify-content: center; */
+}
+
+hr{
+  width: 85vw;
+  border-width: 0.4vh;
+  border-color: white;
+  border-style: solid;
+  position: absolute;
+  margin-left: 7%;
+  /* margin-top: 20%; */
+}
+
+.footer-left > h3{
+  font-size: 40px;
+  width: 1%;
+}
+
+.footer-right > .subsection-right-left  >  h4, .footer-right > .subsection-right-right  >  h4{
+  font-size: 25px;
+}
+
+.footer-left{
+  margin-right: 30vw;
+  margin-left: 5vw;
+  width: 70%;
+}
+.footer-right{
+  display:flex;
+  flex-flow:row;
+  width: 30%;
+}
+
+.subsection-right-left{
+  width: 50%;
+}
+
+.footer-left > svg{
+  margin-right: 5%;
+  height:40px;
+  width:40px;
+}
+
+.footer-left > svg:last-of-type{
+  margin-left: 480%;
+  transform: scale(1.4);
+
+}
+
+#originalImage{
+  visibility: visible;
   position: absolute;
   z-index: 1;
-  bottom: 1700%;
-  left: 50%;
-  margin-left: -80px;
-  margin-top: 20%;
-  margin-right: 100px;
-  font-size: 5vh;
-  width: 25vw;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  right: 0.9%;
+  border-radius: 200px;
 }
 
-
-/* Toggle this class - hide and show the popup */
-.popup2 .show2 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-  animation-duration: 1ms;
-  animation: FadeOut 1s;
+.pfp{
+  margin-right: 1%;
 }
- 
- 
- 
-
