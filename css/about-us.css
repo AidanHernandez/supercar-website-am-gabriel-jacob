@@ -76,6 +76,76 @@ header:nth-of-type(2){
     width: 50%;
 }
 
-.richard > h3{
+.richard{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 110vh;
+    flex-flow: column;
+    color: white;
+    margin-top: 5%;
+}
 
+.richard > h3{
+    font-size: 64px;
+    justify-content: center;
+}
+
+.richard > section{
+    display: flex;
+}
+
+.richard > section > img{
+    width: 30%;
+}
+
+.richard > section > p{
+    width: 50%;
+    margin-left: 8%;
+    margin-right: 10%;
+    font-size: 24px;
+    align-items: center;
+    align-content: center;
+}
+
+
+.carosell{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.imgs{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.imgs > .img1 > img{
+    display: flex;
+    width: 100%;
+
+}
+
+.imgs > .img1 > p{
+    color: white;
+    justify-content: space-evenly;
+    font-size: 32px;
+    text-align: center;
+}
+
+.imgs > .img2 > p{
+    color: white;
+    justify-content: space-evenly;
+    font-size: 32px;
+    text-align: center;
+}
+
+.next-previous{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
