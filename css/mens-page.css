@@ -8,7 +8,7 @@ body {
 
 .content{
   background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
-  height: 190vh;
+  height: 100%;
   width: 100%;
   margin-top: 10vh;
   display: flex;
@@ -18,9 +18,9 @@ body {
   align-items: center;
 }
 
-.images {
-  height: 48vh;
-  width: 25vw;
+.images { 
+  height: 50vh;
+  /* width: 25vw; */
   margin-top: 5%;
 }
 
@@ -28,25 +28,29 @@ body {
   font-size: 10vh;
 }
 
-.viewcart{
-  font-size: 6vh;
+a.viewcart{
+  font-size: 5vh;
   background-color: black;
   color: white;
   text-decoration: none;
+  height: 7.5vh;
+  display: block;
 }
+
 
 .first{
   display: flex;
   flex-flow: row;
   width: 100%;
   justify-content: space-around;
+  margin-top: 3%;
 }
 
 .box1 {
   display: flex;
   flex-flow: column;
   background-color: gray;
-  height: 62vh;
+  height: 79vh;
   width: fit-content;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
@@ -108,7 +112,7 @@ body {
 }
 
 .size-select{
-  margin-left: 15%;
+  margin-left: 31.5%;
   display: flex;
 }
 
@@ -161,7 +165,7 @@ body {
   font-size: 1.5vh;
   /* margin-top: 3%; */
   font-family: "Nixie One", system-ui;
-  margin-left: 30%;
+  margin-left: 56%;
   
 }
 
@@ -199,7 +203,7 @@ body {
   display: flex;
   flex-flow: column;
   background-color: gray;
-  height: 62vh;
+  height: 79vh;
   width: fit-content;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
@@ -209,15 +213,16 @@ body {
 .second{
   display: flex;
   justify-content: space-around;
-  margin-top: 6%;
+  margin-top: 1%;
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .box3 {
   display: flex;
   flex-flow: column;
   background-color: gray;
-  height: 62vh;
+
   width: fit-content;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
@@ -228,14 +233,16 @@ body {
   display: flex;
   flex-flow: column;
   background-color: gray;
-  height: 62vh;
+
   width: fit-content;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
 }
 
-
-
+.images2 { 
+  width: 25vw;
+  margin-top: 5%;
+}
 
 
 
@@ -243,6 +250,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
+
   color: white;
   /* margin-bottom: 2%; */
   background-color: black;
