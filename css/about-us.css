@@ -65,4 +65,17 @@ header:nth-of-type(2){
     color:white;
     background-image: url(../img/about-us-img/rectangle-101.png);
     background-position: 0% 100%;
+    background-size: cover;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-ally > p{
+    background: rgba(0, 0, 0, 0.28);
+    width: 50%;
+}
+
+.richard > h3{
+
 }
