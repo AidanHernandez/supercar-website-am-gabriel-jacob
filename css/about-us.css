@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Nixie One", system-ui;
+    margin: 0px;
+    background: #020103;
+    z-index: -10000;
+    overflow-x: hidden;
+    top:0 !important;
+    position: absolute !important;
+}
+
+div:first-of-type{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-top: 10vh;
+    background-image: url(../img/about-us-img/complete-car-1024x552\ 1.png);
+    background-position: 0% 300%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header:first-of-type{
+    display: flex;
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    font-size: 56px;
+    
+}
+
+div:nth-of-type(2){
+    display: flex;
+    width: 100%;
+}
+
+div:nth-of-type(2) > img{
+    display: flex;
+    width: 50%;
+}
+
+
+header:nth-of-type(2){
+    display: flex;
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    font-size: 56px;
+    
+}
+
+.car-ally{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    color:white;
+    background-image: url(../img/about-us-img/rectangle-101.png);
+    background-position: 0% 100%;
+}
