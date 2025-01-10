@@ -5,21 +5,13 @@ document.getElementById("colorwheel-arrow").addEventListener("click", color_whee
 
 
 
+
 const green = document.getElementById("fancygreen-exterior")
 const blue = document.getElementById("fancyblue-exterior")
 const red = document.getElementById("fancyred-exterior")
 const black = document.getElementById("fancyblack-exterior")
 
-
-
-
-green.addEventListener("click", green_click)
-blue.addEventListener("click", blue_click)
-red.addEventListener("click", red_click)
-black.addEventListener("click", black_click)
-
-localStorage.setItem("carinterior", "black")
-
+var paint
 
 
 function premium_arrow(){
@@ -197,122 +189,121 @@ function color_wheel_arrow(){
 
 
 
+function threed(){
+    document.getElementById("3d").classList.remove("clicked")
+    document.getElementById("2d").classList.remove("clicked")
+
+    document.getElementById("3d").classList.add("clicked")
 
 
-function green_click(){
-  green.classList.remove("clicked")
-  blue.classList.remove("clicked")
-  red.classList.remove("clicked")
-  black.classList.remove("clicked")
+    car = document.querySelectorAll('canvas')
 
-  green.classList.add("clicked")
-  localStorage.setItem("carinterior", "green")
-}
-
-function blue_click(){
-  green.classList.remove("clicked")
-  blue.classList.remove("clicked")
-  red.classList.remove("clicked")
-  black.classList.remove("clicked")
-
-  blue.classList.add("clicked")
-  localStorage.setItem("carinterior", "blue")
-  
-}
-
-function red_click(){
-  green.classList.remove("clicked")
-  blue.classList.remove("clicked")
-  red.classList.remove("clicked")
-  black.classList.remove("clicked")
-
-  red.classList.add("clicked")
-  localStorage.setItem("carinterior", "red")
-}
-
-function black_click(){
-  green.classList.remove("clicked")
-  blue.classList.remove("clicked")
-  red.classList.remove("clicked")
-  black.classList.remove("clicked")
-
-  black.classList.add("clicked")
-  localStorage.setItem("carinterior", "black")
-}
-
-
-
-
-function initColorPicker() {
-  var canvas = document.getElementById('colorCanvas');
-  var canvasContext = canvas.getContext('2d');
-
-  let gradient = canvas.getContext('2d').createLinearGradient(0, 0, canvas.width, 0)
-  gradient.addColorStop(0, '#ff0000')
-  gradient.addColorStop(1 / 6, '#ffff00')
-  gradient.addColorStop((1 / 6) * 2, '#00ff00')
-  gradient.addColorStop((1 / 6) * 3, '#00ffff')
-  gradient.addColorStop((1 / 6) * 4, '#0000ff')
-  gradient.addColorStop((1 / 6) * 5, '#ff00ff')
-  gradient.addColorStop(1, '#ff0000')
-  canvas.getContext('2d').fillStyle = gradient
-  canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height)
-
-  gradient = canvas.getContext('2d').createLinearGradient(0, 0, 0, canvas.height)
-  gradient.addColorStop(0, 'rgba(255, 255, 255, 1)')
-  gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0)')
-  gradient.addColorStop(1, 'rgba(255, 255, 255, 0)')
-  canvas.getContext('2d').fillStyle = gradient
-  canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height)
-
-  gradient = canvas.getContext('2d').createLinearGradient(0, 0, 0, canvas.height)
-  gradient.addColorStop(0, 'rgba(0, 0, 0, 0)')
-  gradient.addColorStop(0.5, 'rgba(0, 0, 0, 0)')
-  gradient.addColorStop(1, 'rgba(0, 0, 0, 1)')
-  canvas.getContext('2d').fillStyle = gradient
-  canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height)
-
-
-  canvas.onclick = function(e) {
-      console.log()
-    var imgData = canvasContext.getImageData((e.offsetX / canvas.clientWidth) * canvas.width, (e.offsetY / canvas.clientHeight) * canvas.height, 1, 1)
-    var rgb = imgData.data;
-    var color = "rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] +  ")";
-    console.log("%c" + color, "color:" + color)
-
-  
-    localStorage.setItem("carinterior", color)
-    document.getElementById("rgb").style.color=color;
-    document.getElementById("rgb").textContent=color;
-
-
+    car.forEach((canvas) => {
+        canvas.style.zIndex = "1";
+        canvas.style.left = "0"
+    });
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/white.png)"
+    document.getElementById("colorCanvas").style.left = ""
+    document.getElementById("2d").style.zIndex = "2"
     
+}
+  
+function twod(){
+    document.getElementById("3d").classList.remove("clicked")
+    document.getElementById("2d").classList.remove("clicked")
+
+    document.getElementById("2d").classList.add("clicked")
+
+    car = document.querySelectorAll('canvas')
+
+    car.forEach((canvas) => {
+        canvas.style.zIndex = "0";
+    });
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/front-black.png)"
+    document.getElementById("colorCanvas").style.zIndex = "1"
+    document.getElementById("2d").style.zIndex = "0"
+}
+
+function one(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    ones.classList.add("selected")
+
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/front-black.png)"
+    document.getElementById("car-pic-exterior").style.backgroundPosition = "55% 50%"
     
-  }
 }
 
-initColorPicker()
+function two(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
 
+    twos.classList.add("selected")
 
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/threef-black.png)"
+    document.getElementById("car-pic-exterior").style.backgroundPosition = "55% 50%"
 
-
-
-document.getElementById("back").onclick = function () {
-  location.href = "../exterior-nemesis.html";
 }
+
+function three(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    threes.classList.add("selected")
+
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/side-black.png)"
+
+    document.getElementById("car-pic-exterior").style.backgroundPosition = "35% 50%"
+    // background-position: 55% 50%;
+}
+
+function four(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    fours.classList.add("selected")
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/side-back-black.png)"
+    document.getElementById("car-pic-exterior").style.backgroundPosition = "05% 50%"
+
+}
+
+function five(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    fives.classList.add("selected")
+
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/back-black.png)"
+    document.getElementById("car-pic-exterior").style.backgroundPosition = "55% 40%"
+
+}
+
+
 
 document.getElementById("next").onclick = function () {
-  var cartype = "nemesis";
-  localStorage.setItem("cartype",cartype);
-  location.href = "../confirm.html";
+    location.href = "../interior-blackwidow.html";
 }
-
 
 document.getElementById("save").onclick = function () {
     paint_save = localStorage.getItem("paint")
-    car_interior = localStorage.getItem("carinterior")
-    localStorage.setItem("cartype", "Nemesis")
+    localStorage.setItem("cartype", "Black Widow")
     localStorage.setItem("paint_save", paint_save)
-    localStorage.setItem("interior_save", car_interior)
+    localStorage.setItem("interior_save", "black")
     location.href = "../pf.html";
 }

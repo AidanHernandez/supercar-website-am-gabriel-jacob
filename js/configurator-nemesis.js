@@ -299,3 +299,12 @@ function five(){
 document.getElementById("next").onclick = function () {
     location.href = "../interior-nemesis.html";
 }
+
+
+document.getElementById("save").onclick = function () {
+    paint_save = localStorage.getItem("paint")
+    localStorage.setItem("cartype", "Nemesis")
+    localStorage.setItem("paint_save", paint_save)
+    localStorage.setItem("interior_save", "black")
+    location.href = "../pf.html";
+}

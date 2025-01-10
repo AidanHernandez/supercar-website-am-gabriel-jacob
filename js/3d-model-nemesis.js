@@ -9,6 +9,8 @@ const red = document.getElementById("fancyred-exterior")
 const black = document.getElementById("fancyblack-exterior")
 var loader = new GLTFLoader().setPath('../nemesis-3d-model/green/');
 
+var paint = "green"
+localStorage.setItem("paint",paint)
 
 green.addEventListener("click", green_click)
 blue.addEventListener("click", blue_click)
@@ -16,6 +18,8 @@ red.addEventListener("click", red_click)
 black.addEventListener("click", black_click)
 
 var color_car = "rgb(0,0,0)"
+
+localStorage.setItem("carcolor", "green")
 
 var r = red
 var g = green
@@ -226,7 +230,11 @@ function green_click(){
   black.classList.remove("clicked")
 
   green.classList.add("clicked")
-  loader = new GLTFLoader().setPath('../nemesis-3d-model/green/');
+  loader = new GLTFLoader().setPath('../nemesis-3d-model/green/')
+  localStorage.setItem("carcolor", "green")
+  var paint = "green"
+  localStorage.setItem("paint",paint)
+ 
   refresh_model()
 }
 
@@ -237,7 +245,10 @@ function blue_click(){
   black.classList.remove("clicked")
 
   blue.classList.add("clicked")
-  loader = new GLTFLoader().setPath('../nemesis-3d-model/blue/');
+  loader = new GLTFLoader().setPath('../nemesis-3d-model/blue/')
+  localStorage.setItem("carcolor", "blue")
+  var paint = "blue"
+  localStorage.setItem("paint",paint)
   refresh_model()
   
 }
@@ -249,7 +260,10 @@ function red_click(){
   black.classList.remove("clicked")
 
   red.classList.add("clicked")
-  loader = new GLTFLoader().setPath('../nemesis-3d-model/red/');
+  loader = new GLTFLoader().setPath('../nemesis-3d-model/red/')
+  localStorage.setItem("carcolor", "red")
+  var paint = "red"
+  localStorage.setItem("paint",paint)
   refresh_model()
 }
 
@@ -260,7 +274,10 @@ function black_click(){
   black.classList.remove("clicked")
 
   black.classList.add("clicked")
-  loader = new GLTFLoader().setPath('../nemesis-3d-model/black/');
+  loader = new GLTFLoader().setPath('../nemesis-3d-model/black/')
+  localStorage.setItem("carcolor", "black")
+  var paint = "black"
+  localStorage.setItem("paint",paint)
   refresh_model()
 }
 

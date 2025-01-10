@@ -127,6 +127,7 @@ function hamburger_click() {
         document.getElementById("models-submenu-blackwidow").classList.add('clicked')
       }
       
+      
 
     }
 
@@ -141,6 +142,9 @@ function hamburger_click() {
       else{
       document.getElementById("models-submenu-nemesis").classList.add('clicked')
       }
+
+      var cartype = "nemesis";
+      localStorage.setItem("cartype",cartype);
     }
 
 

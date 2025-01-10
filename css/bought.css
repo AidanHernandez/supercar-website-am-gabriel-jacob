@@ -15,6 +15,7 @@ body{
     height: 89.7vh;
     z-index: 1;
     align-items: center;
+    transition: scale 1s;
 }
 
 .beginning{

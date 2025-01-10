@@ -8,8 +8,12 @@ var cartype = localStorage.getItem("cartype")
 
 var car_color = localStorage.getItem("carcolor");
 
+var car_interior = localStorage.getItem("carinterior")
+
 
 if(cartype == "nemesis"){
+
+
     document.getElementById("change-exterior").onclick = function () {
         location.href = "../exterior-nemesis.html";
     }
@@ -17,7 +21,16 @@ if(cartype == "nemesis"){
     document.getElementById("change-interior").onclick = function () {
         location.href = "../interior-nemesis.html";
     }
+  }
+  else{
+      document.getElementById("change-exterior").onclick = function () {
+        location.href = "../exterior-blackwidow.html";
+    }
 
+    document.getElementById("change-interior").onclick = function () {
+        location.href = "../interior-blackwidow.html";
+    }
+  }
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -130,21 +143,41 @@ loader.load('scene.gltf', (gltf) => {
     }
   });
 
-  model.traverse((node) => {
-    if (node.isMesh && node.name === 'MyCubeMesh'){
+  if(car_color == "green"){
+    
+    loader = new GLTFLoader().setPath('../nemesis-3d-model/green/')
+    refresh_model()
+    
+  }
+  else if(car_color == "blue"){
+    loader = new GLTFLoader().setPath('../nemesis-3d-model/blue/')
+    refresh_model()
+  }
+  else if(car_color == "red"){
+    loader = new GLTFLoader().setPath('../nemesis-3d-model/red/')
+    refresh_model()
+  }
+  else if(car_color == "black"){
+    loader = new GLTFLoader().setPath('../nemesis-3d-model/black/')
+    refresh_model()
+  }
+  else{
+    model.traverse((node) => {
+      if (node.isMesh && node.name === 'MyCubeMesh'){
+          
+          console.log(car_color)
+
+          let selectedColor = new THREE.Color().setHex("0x" + car_color);
+
+          node.material.color = new THREE.Color(selectedColor); 
         
-        console.log(car_color)
 
-        let selectedColor = new THREE.Color().setHex("0x" + car_color);
-
-        node.material.color = new THREE.Color(selectedColor); 
-      
-
-    }
-    else{
-      console.log('no')
-    }
-    });
+      }
+      else{
+        console.log('no')
+      }
+      });
+  }
 
   mesh.position.set(0, 0, 0);
   scene.add(mesh);
@@ -172,21 +205,53 @@ function animate() {
   renderer.render(scene, camera);
 }
 
+function refresh_model(){
+  loader.load('scene.gltf', (gltf) => {
+    console.log('loading model');
+    const mesh = gltf.scene;
+    const model = gltf.scene;
+    
+  
+    mesh.position.set(0, 0, 0);
+
+    
+
+
+
+
+    scene.add(mesh);
+  
+    document.getElementById('progress-container').style.display = 'none';
+  }, (xhr) => {
+    console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
+  }, (error) => {
+    console.error(error);
+  });
+  
+}
 
 
 
 
 
 var paint = localStorage.getItem("paint");
+
+
 document.getElementById("exterior-paint").style.color=paint;
+console.log(paint)
 document.getElementById("exterior-paint").textContent="Paint color: " + paint;
 
 
 
 
+document.getElementById("interior-paint").style.color= car_interior
+
+
+document.getElementById("interior-paint").textContent="Paint color: " + car_interior
+
 
 
 
 animate();
-}
+
 

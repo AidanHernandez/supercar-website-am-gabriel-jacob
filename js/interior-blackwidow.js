@@ -298,11 +298,11 @@ initColorPicker()
 
 
 document.getElementById("back").onclick = function () {
-  location.href = "../exterior-nemesis.html";
+  location.href = "../exterior-blackwidow.html";
 }
 
 document.getElementById("next").onclick = function () {
-  var cartype = "nemesis";
+  var cartype = "blackwidow";
   localStorage.setItem("cartype",cartype);
   location.href = "../confirm.html";
 }
@@ -311,7 +311,7 @@ document.getElementById("next").onclick = function () {
 document.getElementById("save").onclick = function () {
     paint_save = localStorage.getItem("paint")
     car_interior = localStorage.getItem("carinterior")
-    localStorage.setItem("cartype", "Nemesis")
+    localStorage.setItem("cartype", "Black Widow")
     localStorage.setItem("paint_save", paint_save)
     localStorage.setItem("interior_save", car_interior)
     location.href = "../pf.html";

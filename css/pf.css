@@ -69,6 +69,35 @@ span{
     
 }
 
+.saved-car > h3{
+    font-size: 30px;
+}
+
+.order-history > h3{
+    font-size: 30px;
+}
+
+.saved-car > p{
+    font-size: 25px;
+}
+
+.order-history > p{
+    font-size: 25px;
+}
+
+.saved-car{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.order-history{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 .info-options{
     display: flex;
     flex-flow: column;
@@ -94,11 +123,10 @@ input{
     margin-left: 12%;
     align-self: center;
     font-family: "Nixie One", system-ui;
+    
 }
 
-i.custom-file-upload{
-    background-color: aqua;
-}
+
 
 #originalImage{
     visibility: hidden;
