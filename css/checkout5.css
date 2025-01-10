@@ -316,7 +316,8 @@ a {
 
 .popup .popuptext {
     visibility: hidden;
-    width: 35vw;
+    width: 38vw;
+    height: 50vh;
     background-color: black;
     color: white;
     font-size: 7vh;
@@ -341,32 +342,16 @@ a {
     
 }
 
-.a1 {
-    margin-top: 5%;
+.index {
     font-size: 5vh;
     text-decoration: none;
     background-color: white;
     border: 2px solid;
     border-radius: 1rem;
     color: black;
+    padding: 1%;
 }
 
-.a1:hover {
+.index:hover {
     background-color: #737372;
 }
-
-.a2:hover {
-    background-color: #737372;
-}
-
-.a2 {
-    
-    font-size: 5vh;
-    text-decoration: none;
-    background-color: white;
-    border: 2px solid;
-    border-radius: 1rem;
-    color: black;
-    margin-top: 5%;
-}
-
