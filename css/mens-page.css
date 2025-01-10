@@ -18,11 +18,7 @@ body {
   align-items: center;
 }
 
-.images { 
-  height: 50vh;
-  /* width: 25vw; */
-  margin-top: 5%;
-}
+
 
 .content > h2{
   font-size: 10vh;
@@ -35,6 +31,11 @@ a.viewcart{
   text-decoration: none;
   height: 7.5vh;
   display: block;
+  transition: transform 1s;
+}
+
+a:hover {
+  transform: scale(1.3);
 }
 
 
@@ -46,15 +47,6 @@ a.viewcart{
   margin-top: 3%;
 }
 
-.box1 {
-  display: flex;
-  flex-flow: column;
-  background-color: gray;
-  height: 79vh;
-  width: fit-content;
-  padding: 2%;
-  background-image: linear-gradient(#000000, #FDFFFB);
-}
 
 
 
@@ -199,15 +191,13 @@ a.viewcart{
 }
 
 
-.box2 {
-  display: flex;
-  flex-flow: column;
-  background-color: gray;
-  height: 79vh;
-  width: fit-content;
-  padding: 2%;
-  background-image: linear-gradient(#000000, #FDFFFB);
+
+/* images rezising */
+img {
+  width: 28vw;
+  height: 58vh;
 }
+
 
 
 .second{
@@ -218,14 +208,56 @@ a.viewcart{
   margin-bottom: 5%;
 }
 
+
+.box1 {
+  display: flex;
+  flex-flow: column;
+  background-color: gray;
+  height: 73vh;
+  width: fit-content;
+  padding: 2%;
+  background-image: linear-gradient(#000000, #FDFFFB);
+  transition: transform 0.5s;
+}
+
+.box1:hover {
+  transform: scale(1.02) ;
+}
+
+.box2:hover {
+  transform: scale(1.01) ;
+}
+
+.box3:hover {
+  transform: scale(1.01) ;
+}
+
+.box4:hover {
+  transform: scale(1.01) ;
+}
+
+
+.box2 {
+  display: flex;
+  flex-flow: column;
+  background-color: gray;
+  height: 73vh;
+  width: fit-content;
+  padding: 2%;
+  background-image: linear-gradient(#000000, #FDFFFB);
+  transition: transform 0.5s;
+}
+
+
 .box3 {
   display: flex;
   flex-flow: column;
   background-color: gray;
-
+  height: 73vh;
   width: fit-content;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
+  transition: transform 0.5s;
 }
 
 
@@ -233,10 +265,11 @@ a.viewcart{
   display: flex;
   flex-flow: column;
   background-color: gray;
-
+  height: 73vh;
   width: fit-content;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
+  transition: transform 0.5s;
 }
 
 .images2 { 
@@ -317,4 +350,8 @@ hr{
 
 .pfp{
   margin-right: 1%;
+}
+
+h2 {
+  color: black;
 }

@@ -136,3 +136,10 @@ a {
     width: 25vw;
     height: 60vh;
 }
+
+.new1 {
+    height: 5vh;
+    margin-top: 100%;
+    width: 100vw;
+    margin-left: 5%;
+}
