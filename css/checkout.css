@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Nixie One", system-ui;
+    background-image: linear-gradient(#94BDF2, #737372 );
+   
+}
+
 img {
     height: 30vh;
     width: 15vw;
@@ -93,8 +101,13 @@ height: 7vh;
 width: 15vw;
 font-size: 5vh;
 background-color: #D7D9D7;
-border: none;
+border: 2px solid;
 border-radius: 1rem;
+transition: transform 0.5s;
+}
+
+.next:hover {
+    transform: scale(1.1);
 }
 
 
@@ -137,3 +150,4 @@ h1 {
 #arrow3 {
     margin-left: 6%;
 }
+
