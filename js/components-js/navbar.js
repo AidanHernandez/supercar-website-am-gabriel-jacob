@@ -43,7 +43,7 @@ function hamburger_click() {
   
   
 
-  setTimeout(() =>  document.getElementById("models-submenu").style.opacity = "1", 1700)
+  
   
 
   document.getElementById("logo").style.transition='width 1s, height 1s'
@@ -95,15 +95,13 @@ function hamburger_click() {
       document.getElementById("models-submenu-blackwidow").classList.add('almost-clicked')
       document.getElementById("models-submenu-nemesis").classList.add('almost-clicked')
       document.getElementById("merch-submenu").classList.add('almost-clicked')
-      document.getElementById("models-submenu-nemesis").style.opacity = "1"
-      document.getElementById("models-submenu-blackwidow").style.opacity = "1"
+      
       setTimeout(() => document.getElementById("models-submenu").style.opacity = "1", 0)
 
     }
     else{
 
-      document.getElementById("models-submenu-nemesis").style.opacity = "1"
-      document.getElementById("models-submenu-blackwidow").style.opacity = "1"
+      
       document.getElementById("models-submenu").classList.add('clicked')
       document.getElementById("models-submenu").style.zIndex = "101"
       document.getElementById("models-submenu-blackwidow").classList.add('almost-clicked')
@@ -127,7 +125,9 @@ function hamburger_click() {
         document.getElementById("models-submenu-blackwidow").classList.add('clicked')
       }
       
-      
+      document.getElementById("models-submenu-blackwidow").style.opacity = "1"
+      var cartype = "blackwidow";
+      localStorage.setItem("cartype",cartype);
 
     }
 
@@ -143,6 +143,7 @@ function hamburger_click() {
       document.getElementById("models-submenu-nemesis").classList.add('clicked')
       }
 
+      document.getElementById("models-submenu-nemesis").style.opacity = "1"
       var cartype = "nemesis";
       localStorage.setItem("cartype",cartype);
     }
@@ -213,17 +214,19 @@ function hamburger_click() {
       document.getElementById("models-submenu").classList.remove('back')
       document.getElementById("models-submenu").classList.remove('clicked')
       document.getElementById("models-submenu").style.zIndex = "100"
+      document.getElementById("models-submenu").style.opacity = "0"
     }
 
     function back_nemesis_removed(){
       
       document.getElementById("models-submenu-nemesis").classList.remove('back')
       document.getElementById("models-submenu-nemesis").classList.remove('clicked')
+      document.getElementById("models-submenu-nemesis").style.opacity = "0"
     }
 
     function back_blackwidow_removed(){
       document.getElementById("models-submenu-blackwidow").classList.remove('back')
-      
+      document.getElementById("models-submenu-blackwidow").style.opacity = "0"
       document.getElementById("models-submenu-blackwidow").classList.remove('clicked')
     }
 
@@ -231,6 +234,7 @@ function hamburger_click() {
       document.getElementById("merch-submenu").classList.remove('back')
       document.getElementById("merch-submenu").classList.remove('clicked')
       document.getElementById("merch-submenu").style.zIndex = "100"
+      document.getElementById("merch-submenu").style.opacity = "0"
     }
 
 
@@ -240,7 +244,7 @@ function hamburger_click() {
       document.getElementById("models-submenu-blackwidow").classList.remove('clicked')
       document.getElementById("models-submenu-blackwidow").classList.remove('almost-clicked')
       document.getElementById("models-submenu-blackwidow").classList.remove('exit')
-
+      document.getElementById("models-submenu-blackwidow").style.opacity = "0"
 
       
       document.getElementById("models-submenu-nemesis").classList.remove('models-nemesis-back')
@@ -248,14 +252,14 @@ function hamburger_click() {
       document.getElementById("models-submenu-nemesis").classList.remove('clicked')
       document.getElementById("models-submenu-nemesis").classList.remove('almost-clicked')
       document.getElementById("models-submenu-nemesis").classList.remove('exit')
-
+      document.getElementById("models-submenu-nemesis").style.opacity = "0"
 
       
       document.getElementById("models-submenu").classList.remove('back')
       document.getElementById("models-submenu").classList.remove('clicked')
       // document.getElementById("models-submenu").classList.remove('almost-clicked')
       document.getElementById("models-submenu").classList.remove('exit')
-
+      document.getElementById("models-submenu").style.opacity = "0"
 
 
 
@@ -263,6 +267,7 @@ function hamburger_click() {
       document.getElementById("merch-submenu").classList.remove('clicked')
       // document.getElementById("merch-submenu").classList.remove('almost-clicked')
       document.getElementById("merch-submenu").classList.remove('exit')
+      document.getElementById("merch-submenu").style.opacity = "0"
     }
   
 
@@ -276,7 +281,7 @@ function merch_nav_click() {
       document.getElementById("models-submenu-blackwidow").classList.add("models-blackwidow-back")
       document.getElementById("merch-submenu").classList.add('clicked')
       document.getElementById("models-submenu").style.zIndex = "100"
-
+      
       setTimeout(remove_click, 1000)
       setTimeout(remove_models_blank_back, 1000)
       setTimeout(remove_back, 1000)
@@ -284,6 +289,16 @@ function merch_nav_click() {
     else if (document.getElementById("models-submenu-nemesis").classList.contains("clicked")){
       document.getElementById("models-submenu").classList.add("back")
       document.getElementById("models-submenu-nemesis").classList.add("models-nemesis-back")
+      document.getElementById("merch-submenu").classList.add('clicked')
+      document.getElementById("models-submenu").style.zIndex = "100"
+      
+      setTimeout(remove_click, 1000)
+      setTimeout(remove_models_blank_back, 1000)
+      setTimeout(remove_back, 1000)
+    }
+    else if (document.getElementById("models-submenu-blackwidow").classList.contains("clicked")){
+      document.getElementById("models-submenu").classList.add("back")
+      document.getElementById("models-submenu-blackwidow").classList.add("models-blackwidow-back")
       document.getElementById("merch-submenu").classList.add('clicked')
       document.getElementById("models-submenu").style.zIndex = "100"
       setTimeout(remove_click, 1000)
@@ -302,6 +317,8 @@ function merch_nav_click() {
   else{
     document.getElementById("merch-submenu").classList.add('clicked')
   }
+
+  document.getElementById("merch-submenu").style.opacity = "1"
 }
 
 
@@ -326,6 +343,9 @@ function remove_click(){
   document.getElementById("models-submenu-blackwidow").classList.remove("clicked")
   document.getElementById("models-submenu-nemesis").classList.remove("clicked")
   document.getElementById("models-submenu").classList.remove("clicked")
+  document.getElementById("models-submenu").style.opacity = "0"
+  document.getElementById("models-submenu-nemesis").style.opacity = "0"
+  document.getElementById("models-submenu-blackwidow").style.opacity = "0"
 }
 
 function remove_models_blank_back(){
@@ -507,7 +527,17 @@ document.getElementById("nav").style.marginLeft ="0%"
   var pfp_img = localStorage.getItem("pfp-img"); 
 
   const imgElement = document.getElementById('originalImage');
+  
+  if(pfp_img == null)
+  {
+    document.getElementById("pfp").style.opacity = "1"
+        document.getElementById('originalImage').style.opacity = "0"
+    imgElement.style.visibility = "none"
+  }
+  else{
+    imgElement.src = pfp_img
+    imgElement.style.visibility = "visible"
 
-  imgElement.src = pfp_img
-  imgElement.style.visibility = "visible"
-  document.getElementById("pfp").style.opacity = "0"
+    document.getElementById("pfp").style.opacity = "0"
+  }
+  

@@ -15,12 +15,12 @@ body{
     display: flex;
     flex-flow: column;
     margin-top: 5%;  
-    height: 850px;
+    height: 750px;
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url(../img/homepage-img/hero-img-placeholder.png);
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     z-index: 1;
     
@@ -74,30 +74,19 @@ body{
 }
 
 
-.hero-carosel-options{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    align-self: center;
-    margin-bottom: 1%;
-    width: 30%;
-    align-items: center;
-}
+
 
 .hero-discover{
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 320px;
+    
+    height: 100%;
+    width: 100%;
 }
 
-.buttons-carosel{
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
-}
 
 .discover{
+    align-self: flex-end;
     margin-top: 5px;
     font-family: "Nixie One";
    background-color: rgba(170, 169, 169, 0.60);
@@ -687,7 +676,7 @@ hr{
     }
 
     .hero{ 
-        height: 950px;
+        height: 750px;
     }
 
     .hero-text > h3{
@@ -709,7 +698,9 @@ hr{
     .img-holder{
         margin-left: 1300px;
     }
-
+    .side-blocker{
+        top: 900px;
+    }
 
 
 }
@@ -722,7 +713,7 @@ hr{
 
 @media screen and (min-width:100px) and (max-width:2176px){
     .side-blocker{
-        top: 1080px;
+        top: 880px;
     }
 }
 
@@ -730,7 +721,7 @@ hr{
 
 @media screen and (min-width:100px) and (max-width:1851px){
     .side-blocker{
-        top: 1050px;
+        top: 850px;
     }
 
     div.img-holder{
@@ -760,7 +751,7 @@ hr{
        
     }
     .side-blocker{
-        top: 1020px;
+        top: 830px;
     }
 
     div.img-holder {
@@ -771,7 +762,7 @@ hr{
 
 @media screen and (min-width:100px) and (max-width:1441px){
     .hero{
-        height: 700px;
+        height: 600px;
     }
     .configure{
         height: 1800px;
@@ -779,6 +770,7 @@ hr{
 
     .hero-text > h3{
         font-size: 35px;
+        margin-top: 8%;
     }
 
     .hero-text > h2{
@@ -786,7 +778,7 @@ hr{
     }
 
     .side-blocker{
-        top: 750px;
+        top: 650px;
     }
 
     h3.scroll-header{
@@ -918,7 +910,7 @@ hr{
     }
 
     .side-blocker {
-        top: 720px;
+        top: 450px;
     }
 
     div.img-holder{
@@ -927,6 +919,14 @@ hr{
 
     .configure{
         height: 1100px;
+    }
+
+    .hero{
+        height: 450px;
+    }
+
+    .hero-text{
+        margin-left: 100px;
     }
 }
 
@@ -1023,11 +1023,20 @@ hr{
 
 @media screen and (max-width:771px){
     .hero-text{
-        margin-left: 100px;
+        margin-left: 50px;
+        margin-top: 6%;
+    }
+    
+    .hero-text > h3{
+        font-size: 20px;
+    }
+
+    .hero-text > h2{
+        font-size: 25px;
     }
 
     .hero{
-        height: 600px;
+        height: 350px;
     }
     
     .spacer{
@@ -1053,7 +1062,7 @@ hr{
     }
 
     .side-blocker {
-        top: 600px;
+        top: 350px;
     }
 
     @keyframes sideblocker-in {
@@ -1185,6 +1194,13 @@ hr{
 
 
 @media screen and (max-width:571px){
+    .hero{
+        height: 400px;
+    }
+
+    .hero-text{
+        margin-top: 7%;
+    }
     div.img-holder {
         margin-left: 190px;
     }
@@ -1193,8 +1209,14 @@ hr{
         100% {right: -35%;}
     }
     .side-blocker{
-        top: 480px;
+        top: 380px;
     }
+
+    .discover {
+        font-size: 15px;
+        height: 30px;
+    }
+
 }
 
 
@@ -1261,7 +1283,13 @@ hr{
     }
 
     .side-blocker{
-        top:460px;
+        top:370px;
+    }
+
+    .discover {
+        font-size: 15px;
+        height: 30px;
+
     }
 }
 
@@ -1299,7 +1327,7 @@ hr{
     }
 
     .side-blocker{
-        top:420px;
+        top:310px;
         height: 180px;
     }
 
@@ -1315,23 +1343,9 @@ hr{
         margin-left: 130px;
     }
 
-    .index_carosel-option1, .index_carosel-option2, .index_carosel-option3, .index_carosel-option4 {
-        width: 30px;
-        height: 20px;
-    }
+    
 
-    .index_carosel-option1.selected, .index_carosel-option2.selected, .index_carosel-option3.selected, .index_carosel-option4.selected {
-        width: 60px;
-        cursor: initial;
-        height: 20px;
-    }
-
-    .buttons-carosel {
-        
-        justify-content: space-between;
-        width: 170px;
-    }
-
+   
     .discover {
         font-size: 15px;
         height: 30px;
@@ -1339,7 +1353,7 @@ hr{
     }
 
     .hero{
-        height: 450px;
+        height: 350px;
     }
 
     .vision-mission{
