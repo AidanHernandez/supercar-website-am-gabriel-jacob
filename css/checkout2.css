@@ -135,36 +135,36 @@ margin-left: 3%;
 }
 
 #city {
-    width: 20vw;
+    width: 18vw;
     font-size: 5vh;
     background-color: #D7D9D7;
     border-radius: 1rem;
 }
 
 #state {
-    width: 20vw;
+    width: 19vw;
     font-size: 5vh;
     background-color: #D7D9D7;
     border-radius: 1rem;
 }
 
 .b5 {
-    margin-left: 3%;
+    margin-right: 7%;
 }
 
 .b6 {
-    margin-left: 6%;
+    margin-right: -9%;
 }
 
 #country {
-    width: 15.5vw;
+    width: 14.5vw;
     font-size: 5vh;
     background-color: #D7D9D7;
     border-radius: 1rem;
 }
 
 #postalcode {
-    width: 15.5vw;
+    width: 12.5vw;
     font-size: 5vh;
     background-color: #D7D9D7;
     border-radius: 1rem;
@@ -172,6 +172,10 @@ margin-left: 3%;
 
 .b7 {
     margin-right: 11%;
+}
+
+.b8 {
+    margin-right: -3%;
 }
 
 #phonenumber {
@@ -195,3 +199,5 @@ margin-left: 35%;
 transition: transform 0.5s;
 }
 
+
+@media screen and (min-width: 1364px) and (max-width: 1446px)
