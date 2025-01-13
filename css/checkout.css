@@ -58,7 +58,7 @@ img {
     margin-left: 20%;
 }
 #nameoncard {
-    width: 60vw;
+    width: 68vw;
     height: 6vh;
     font-size: 5vh;
     border: 2px solid;
@@ -70,6 +70,7 @@ img {
 #cardnumber {
     width: 10vw;
     height: 6vh;
+    margin-left: 10%;
     border: 2px solid;
     border-radius: 1rem;
     background-color: #D7D9D7;
@@ -79,6 +80,7 @@ img {
 #expodate {
     width: 12vw;
     height: 6vh;
+    margin-left: 8%;
     border: 2px solid;
     border-radius: 1rem;
     background-color: #D7D9D7;
@@ -86,7 +88,8 @@ img {
 }
 
 #cvv {
-    width: 6vw;
+    width: 8vw;
+    margin-left: 10%;
     height: 6vh;
     border: 2px solid;
     border-radius: 1rem;
@@ -108,6 +111,7 @@ transition: transform 0.5s;
 
 .next:hover {
     transform: scale(1.1);
+    background-color: #737372;
 }
 
 
@@ -151,3 +155,232 @@ h1 {
     margin-left: 6%;
 }
 
+@media screen and (min-width: 1364px) and (max-width: 1446px) {
+
+    #nameoncard {
+        width: 75vw;
+    }
+
+    #cardnumber {
+      margin-left: 50%;
+      width: 12vw;
+    }
+
+    #expodate {
+        margin-left: 20%;
+       
+    }
+
+    #cvv {
+        margin-left: -15%;
+      
+    }
+}
+
+@media screen and (min-width: 1114px) and (max-width: 1363px) {
+    #nameoncard {
+      width: 80vw;
+    }
+
+    .cardnumb {
+        margin-left: 10%;
+    }
+
+    .exp {
+     margin-left: -6%;
+    
+    }
+
+    .vvc {
+        margin-left: -2%;
+    }
+}
+ 
+
+@media screen and (min-width: 1004px) and (max-width: 1114px) {
+    #nameoncard {
+        width: 80vw;
+      }
+  
+      .cardnumb {
+          margin-left: 10%;
+      }
+
+      #cardnumber {
+        width: 13vw;
+      }
+  
+      .exp {
+       margin-left: -12%;
+      
+      }
+  
+      .vvc {
+          margin-left: -8%;
+      }
+}
+
+@media screen and (min-width: 807px) and (max-width: 1004px) {
+    #nameoncard {
+        width: 80vw;
+        font-size: 3vh;
+      }
+  
+      .cardnumb {
+          margin-left: 10%;
+          font-size: 3vh;
+      }
+
+      #cardnumber {
+        width: 15vw;
+        
+      }
+  
+      .exp {
+       margin-left: -12%;
+       font-size: 3vh;
+      
+      }
+  
+      .vvc {
+          margin-left: -8%;
+          font-size: 3vh;
+      }
+}
+
+@media screen and (min-width: 663px) and (max-width: 807px) {
+    #nameoncard {
+        width: 85vw;
+        font-size: 1vh;
+      }
+  
+      .cardnumb {
+          margin-left: 10%;
+          font-size: 2.5vh;
+      }
+
+      #cardnumber {
+        width: 15vw;
+        
+      }
+  
+      .exp {
+       margin-left: -12%;
+       font-size: 2.5vh;
+      
+      }
+  
+      .vvc {
+          margin-left: -8%;
+          font-size: 2.5vh;
+      }
+
+      .next {
+        font-size: 3vh;
+      }
+}
+
+@media screen and (min-width: 543px) and (max-width: 663px) {
+    #nameoncard {
+        width: 85vw;
+        font-size: 1vh;
+      }
+  
+      .cardnumb {
+          margin-left: 10%;
+          font-size: 2vh;
+      }
+
+      #cardnumber {
+        width: 15vw;
+        
+      }
+  
+      .exp {
+       margin-left: -12%;
+       font-size: 2vh;
+      
+      }
+  
+      .vvc {
+          margin-left: -8%;
+          font-size: 2vh;
+      }
+
+      .next {
+        font-size: 3vh;
+      }
+
+      .img {
+        height: 10vh;
+      }
+
+      .s1 {
+        font-size: 1.5vh;
+        
+      }
+      .s2 {
+        font-size: 1.5vh;
+        
+      }
+      .s3 {
+        font-size: 1.5vh;
+      }
+
+      .second {
+        margin-left: 5%;
+      }
+}
+
+
+@media screen and (min-width: 543px) and (max-width: 543px) {
+    #nameoncard {
+        width: 85vw;
+        font-size: 1vh;
+      }
+  
+      .cardnumb {
+          margin-left: 10%;
+          font-size: 2vh;
+      }
+
+      #cardnumber {
+        width: 15vw;
+        
+      }
+  
+      .exp {
+       margin-left: -12%;
+       font-size: 2vh;
+      
+      }
+  
+      .vvc {
+          margin-left: -8%;
+          font-size: 2vh;
+      }
+
+      .next {
+        font-size: 3vh;
+      }
+
+      .img {
+        height: 10vh;
+      }
+
+      .s1 {
+        font-size: 1.5vh;
+        
+      }
+      .s2 {
+        font-size: 1.5vh;
+        
+      }
+      .s3 {
+        font-size: 1.5vh;
+      }
+
+      .second {
+        margin-left: 5%;
+      }
+}
