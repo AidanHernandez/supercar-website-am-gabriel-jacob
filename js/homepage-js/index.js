@@ -104,7 +104,7 @@ function side_feature_open(){
             side_feature_clicked = true
             sideblocker.style.animationName = "sideblocker-out"
         }
-        else if(window.matchMedia("(max-width:571px)").matches && window.matchMedia("(min-width: 571px)").matches){
+        else if(window.matchMedia("(max-width:571px)").matches && window.matchMedia("(min-width: 426px)").matches){
             document.getElementById("scroll-car").style.marginLeft = "190px"
             side_feature_clicked = true
             sideblocker.style.animationName = "sideblocker-out"
