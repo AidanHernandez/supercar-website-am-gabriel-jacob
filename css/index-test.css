@@ -1,0 +1,1352 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Nixie One", system-ui;
+    margin: 0px;
+    background: #020103;
+    z-index: -10000;
+    overflow-x: hidden;
+    top:0 !important;
+    position: absolute !important;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    margin-top: 5%;  
+    height: 850px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../img/homepage-img/hero-img-placeholder.png);
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.hero-blocker{
+    position: absolute;
+    flex-flow: column;
+    margin-top: 5%;  
+    height: 85vh;
+    width: 76%;
+    animation: blah 2s forwards;
+    z-index: 1;
+    top:0;
+    left: -76%;
+    /* left: 12%; */
+    background-color: black;
+}
+
+
+@keyframes blocker-in {
+        0% {left: -76%;}
+        100% {left: 12%;}
+}
+
+@keyframes blocker-out {
+    0% {left: 12%;}
+    100% {left: 100%;}
+}
+
+.hero-text{
+    /* position: absolute; */
+    /* margin-bottom: 25%;
+    left: 24%; */
+    
+    margin-left: 400px;
+    color: white;
+}
+
+.spacer{
+    /* display: flex; */
+    height: 400px;
+}
+
+.hero-text > h3{
+    font-size: 45px;
+}
+
+.hero-text > h2{
+    font-size: 60px;
+}
+
+
+.hero-carosel-options{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 1%;
+    width: 30%;
+    align-items: center;
+}
+
+.hero-discover{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 320px;
+}
+
+.buttons-carosel{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.discover{
+    margin-top: 5px;
+    font-family: "Nixie One";
+   background-color: rgba(170, 169, 169, 0.60);
+   border: none;
+   border-radius: 58px;
+   color: white;
+   font-size: 25px;
+   width: fit-content;
+   height: 41px;
+   cursor: pointer;
+
+}
+
+
+
+.index_carosel-option1, .index_carosel-option2, .index_carosel-option3, .index_carosel-option4{
+    height: 50px;
+    width: 70px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(170, 169, 169, 0.60);
+    transition: width 0.5s;
+    cursor: pointer;
+}
+
+.index_carosel-option1.selected, .index_carosel-option2.selected, .index_carosel-option3.selected, .index_carosel-option4.selected{
+    width: 100px;
+    cursor: initial;
+}
+
+
+
+.side-scroll-feature{
+    display: flex;
+    width: 75%;
+    height: 300px;
+    background-image: url(../img/homepage-img/side-view-maybe.jpg);
+    margin-left: 13%;
+    color: white;
+    margin-top: 5%;
+    background-repeat: no-repeat;
+    
+    border-radius: 5px;
+    transition: transform 0.5s;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.side-scroll-feature:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.side-scroll-feature:hover ~ .img-holder{
+    transform: scale(.65);
+    cursor: pointer;
+
+}
+
+
+
+ .side-scroll-feature:has(+ .img-holder:hover){
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+
+
+.img-holder{
+    display: flex;
+    margin-left: 700px;
+    height: 230px;
+    margin-top: 120px;
+    transition: transform 0.5s, margin-left 1s;
+}
+
+
+
+.side-blocker{
+    z-index: 1;
+    position: absolute;
+    width: 75%;
+    height: 360px;
+
+    margin-left: 10%;
+    color: white;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    
+    background-color: black;
+
+    animation: blah 1s forwards;
+
+    top: 1100px;
+    right: -75%;
+}
+
+
+@keyframes sideblocker-in {
+    0% {right: -75%;}
+    100% {right: -28%;}
+}
+
+    @keyframes sideblocker-out {
+        0% {right: -28%;}
+        100% {right: -75%;}
+}
+
+
+
+
+.scroll-header{
+    margin-left: 15%;
+
+    right: -20%;
+    width: 100%;
+    z-index: 2;
+    bottom: 65%;
+    font-size: 40px;
+}
+
+.scroll-text{
+
+
+    right: 11%;
+    width: 75%;
+    z-index: 2;
+    bottom: 15%;
+    font-size: 20px;
+}
+
+.scroll-alltext{
+    margin-left: 5%;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+
+    font-size: 40px;
+    z-index: -1;
+
+}
+
+
+.vision-mission{
+    display: inline-flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 1400px;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 3%;
+}
+
+.vision-mission > h2{
+    margin-bottom: 0;
+    font-size: 70px;
+    margin-right: 15%;
+    background: rgba(86, 0, 0, 0.211);
+}
+
+.vision-mission_row{
+    display: flex;
+}
+
+.vision-mission_row > .img{
+    margin-left: 5%;
+    width: 1500px;
+    height: 800px;
+    background-image: url(../img/homepage-img/-in-the-clurb-we-all-fam.avif);
+    background-repeat: no-repeat;
+}
+
+.vision-mission_column{
+    display: flex;
+    flex-flow: column;
+    margin-top: 5%;
+}
+
+.vision-mission_column > h3{
+    
+    align-self: flex-start;
+    font-size: 60px;
+    margin: 0;
+    width: fit-content;
+    margin-left: 10%;
+}
+
+.vision-mission_column > h3:last-of-type{
+    margin-left: 13%;
+    margin-bottom: 5%;
+}
+
+.vision-mission_column > p{
+    align-self: flex-start;
+    font-size: 26px;
+    margin-left: 25%;
+    width:40%;
+}
+
+.vision-mission-readmore{
+    display: flex;
+    background-color: #03949691;
+    align-items: center;
+    border-radius: 10px;
+    width: 190px;
+    margin-left: 80%;
+    margin-top: 13%;
+    height:50px;
+    border: none;
+    color: white;
+    font-size: 23px;
+    font-family: "Nixie One";
+}
+
+
+
+.vision-mission-readmore > svg{
+    margin-left: 10%;
+}
+
+
+.configure{
+    display: inline-flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 1400px;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.configure > h2{
+    margin-bottom: 0;
+    font-size: 70px;
+    margin-left: 10%;
+    background: rgba(86, 0, 0, 0.211);
+}
+
+.configure_row{
+    display: flex;
+}
+
+.configure_row > img{
+    margin-right: 5%;
+    width: 1500px;
+    height: 800px;
+    order: 1;
+
+}
+
+.configure_column{
+    display: flex;
+    flex-flow: column;
+    margin-top: 0%;
+}
+
+.configure_column > h3{
+    
+    align-self: flex-end;
+    font-size: 60px;
+    margin: 0;
+    width: fit-content;
+    margin-right: 10%;
+}
+
+.configure_column > h3:last-of-type{
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.configure_column > p{
+    align-self: flex-end;
+    font-size: 26px;
+    margin-right: 25%;
+    width:40%;
+}
+
+.configure-discover{
+    display: flex;
+    
+    background-color: #03949691;
+    align-items: center;
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 10%;
+    /* margin-top: 12%; */
+    height:50px;
+    border: none;
+    color: white;
+    font-size: 23px;
+    font-family: "Nixie One";
+    
+}
+
+
+
+.configure-discover > svg{
+    margin-left: 12%;
+}
+
+
+
+
+
+
+
+.homepage-merchcards{
+    display: flex;
+    flex-flow: row;
+    height:500px;
+    width: 100%;
+    margin-top: 3%;
+    justify-content: space-evenly;
+}
+
+.homepage-mens{
+    display: flex;
+    background-image: url(../img/img-merch/mensnewpolo-black.png);
+    width: calc(100%/3.3);
+    justify-content: center;
+    transition: width 0.7s, opacity 0.7s;
+}
+
+
+
+.homepage-accesories{
+
+    display: flex;
+    background-image: url(../img/homepage-img/placeholder.webp);
+    width: calc(100%/3.3);
+    justify-content: center;
+    transition: width 0.7s, opacity 0.7s;
+
+
+}
+
+.homepage-womens{
+    display: flex;
+    background-image: url(../img/img-merch/womensshirt-white.png);
+    width: calc(100%/3.3);
+    justify-content: center;
+    transition: width 0.7s, opacity 0.7s;
+
+}
+
+.homepage-mens > h3, .homepage-accesories > h3, .homepage-womens > h3{
+    font-size: 45px;
+    margin-bottom: 1%;
+    align-self: flex-end;
+    transition: width 0.7s, opacity 0.4s;
+}
+
+/* start  of mens hover */
+
+.homepage-mens:hover{
+    width: 100%;
+}
+
+.homepage-mens:hover + .homepage-accesories{
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-mens:hover + .homepage-accesories > h3{
+    opacity: 0;
+    
+}
+
+
+
+.homepage-mens:hover + .homepage-accesories + .homepage-womens{
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:hover + .homepage-accesories + .homepage-womens > h3{
+    opacity: 0;
+}
+
+
+/* end of mens hover */
+
+
+/* start of accesories hover */
+.homepage-accesories:hover{
+    width: 100%;
+}
+
+.homepage-accesories:hover + .homepage-womens{
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-accesories:hover + .homepage-womens > h3{
+    opacity: 0;
+    
+}
+
+
+
+.homepage-mens:has(+ .homepage-accesories:hover){
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:has(+ .homepage-accesories:hover) > h3{
+    opacity: 0;
+}
+
+/* end of accesories hover */
+
+
+/* start of womens hover */
+.homepage-womens:hover{
+    width: 100%;
+}
+
+.homepage-accesories:has(+ .homepage-womens:hover){
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-accesories:has(+ .homepage-womens:hover) > h3{
+    opacity: 0;
+    
+}
+
+/* .subhead-content.safety:has(~ .subhead-content.convenience:hover) */
+
+.homepage-mens:has(~ .homepage-womens:hover){
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:has(~ .homepage-womens:hover) > h3{
+    opacity: 0;
+}
+
+/* end of womens hover */
+
+.rare{
+    display: inline-flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 500px;
+    color: white;
+    justify-content: flex-end;
+
+    margin-top: 20%;
+}
+
+.rare > h2{
+    margin-bottom: 0;
+    font-size: 70px;
+    margin-left: 10%;
+    background: rgba(86, 0, 0, 0.211);
+}
+
+.rare_row{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rare_row > img{
+    
+    margin-right: 10%;
+    width: 630px;
+    height: 530px;
+    order: 1;
+
+}
+
+.rare_column{
+    display: flex;
+    flex-flow: column;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.rare_column > h3{
+    
+    align-self: flex-start;
+    font-size: 60px;
+    margin: 0;
+    width: fit-content;
+    margin-left: 25%;
+}
+
+.rare_column > h3:last-of-type{
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+.rare_column > p{
+    align-self: flex-end;
+    font-size: 30px;
+    margin-right: 25%;
+    width:45%;
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    color: white;
+    margin-bottom: 2%;
+    /* justify-content: center; */
+}
+
+hr{
+    width: 85vw;
+    border-width: 0.4vh;
+    border-color: white;
+    border-style: solid;
+    margin-top: 20%;
+}
+
+.footer-left > h3{
+    font-size: 40px;
+    width: 1%;
+}
+
+.footer-right > .subsection-right-left  >  h4, .footer-right > .subsection-right-right  >  h4{
+    font-size: 25px;
+}
+
+.footer-left{
+    margin-right: 30vw;
+    margin-left: 5vw;
+    width: 70%;
+}
+.footer-right{
+    display:flex;
+    flex-flow:row;
+    width: 30%;
+}
+
+.subsection-right-left{
+    width: 50%;
+}
+
+.footer-left > svg{
+    margin-right: 5%;
+    height:40px;
+    width:40px;
+}
+
+.footer-left > svg:last-of-type{
+    margin-left: 480%;
+    transform: scale(1.4);
+
+}
+
+#originalImage{
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    right: 0.9%;
+    border-radius: 200px;
+}
+
+.pfp{
+    margin-right: 1%;
+}
+
+@media screen and (max-width:2560px){
+    
+    html{
+        overflow-x: hidden !important;
+    }
+
+    .hero{ 
+        height: 950px;
+    }
+
+    .hero-text > h3{
+        font-size: 55px;
+    }
+    .hero-text > h2{
+        font-size: 80px;
+    }
+
+    .hero-carosel-options {
+        margin-bottom: 0;
+    }
+   
+    .side-scroll-feature{
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .img-holder{
+        margin-left: 1300px;
+    }
+
+
+
+}
+
+@media screen and (min-width:100px) and (max-width:2251px){
+    div.img-holder{
+        margin-left: 1000px;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:2176px){
+    .side-blocker{
+        top: 1080px;
+    }
+}
+
+
+
+@media screen and (min-width:100px) and (max-width:1851px){
+    .side-blocker{
+        top: 1050px;
+    }
+
+    div.img-holder{
+        margin-left: 800px;
+    }
+    .hero-text{
+        margin-left: 300px;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:1701px){
+    .configure{
+        height: 1600px;
+    }
+    .configure_row > img {
+        width: 1100px;
+        height: 800px;
+       
+    }
+
+}
+
+@media screen and (min-width:100px) and (max-width:1651px){
+    .vision-mission_row > div.img{
+        width: 1100px;
+        height: 800px;
+       
+    }
+    .side-blocker{
+        top: 1020px;
+    }
+
+    div.img-holder {
+        margin-left: 600px;
+    }
+
+}
+
+@media screen and (min-width:100px) and (max-width:1441px){
+    .hero{
+        height: 700px;
+    }
+    .configure{
+        height: 1800px;
+    }
+
+    .hero-text > h3{
+        font-size: 35px;
+    }
+
+    .hero-text > h2{
+        font-size: 45px;
+    }
+
+    .side-blocker{
+        top: 750px;
+    }
+
+    h3.scroll-header{
+        font-size: 30px;
+    }
+
+    p.scroll-text{
+        font-size: 15px;
+    }
+
+    .scroll-alltext{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    @keyframes sideblocker-in {
+        0% {right: -75%;}
+        100% {right: -40%;}
+    }
+
+
+
+
+    .vision-mission > h2{
+        font-size: 60px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 50px;
+    }
+    .vision-mission_column > p{
+        font-size: 20px;
+    }
+
+    .configure > h2{
+        font-size: 60px;
+    }
+
+    .configure_column > h3{
+        font-size: 50px;
+    }
+    .configure_column > p{
+        font-size: 20px;
+    }
+
+
+    .rare_column > h3{
+        font-size: 50px;
+    }
+
+    .rare_column > p{
+        font-size: 20px;
+    }
+
+    .vision-mission{
+        height: 1200px;
+    }
+
+    .configure{
+        height: 1400px;
+    }
+}
+
+
+@media screen and (max-width:1301px) {
+    .vision-mission-readmore {
+        margin-left: 70%;
+    }
+
+    .spacer{
+        height: 350px;
+    }
+
+    .img-holder{
+        height: 180px;
+        margin-top: 160px;
+    }
+
+    .vision-mission_row > div.img {
+        margin-left: 10%;
+    }
+
+    .configure_row > img {
+        height: 600px;
+        width: 400px;
+        margin-right: 5%;
+    }
+
+    .configure_column > p {
+        
+        width: 60%;
+    }
+
+    .vision-mission_column > p {
+        
+        width: 60%;
+    }
+
+    .vision-mission{
+        height: 1000px;
+    }
+
+    .configure{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width:1201px){
+    .img-holder {
+        height: 140px;
+        margin-top: 190px;
+    }
+}
+
+@media screen and (max-width:1101px){
+    .vision-mission_row > div.img {
+        margin-left: 20%;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 20px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 20px
+    }
+
+    .side-blocker {
+        top: 720px;
+    }
+
+    div.img-holder{
+        margin-left: 450px;
+    }
+
+    .configure{
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width:1025px){
+    aside.rare_row > img {
+
+        width: 430px;
+        height: 330px;
+
+    }
+
+    .vision-mission_row > div.img {
+        margin-left: 25%;
+    }
+}
+
+
+@media screen and (max-width:1001px){
+    .configure{
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width:976px){
+    .vision-mission_row > div.img {
+        display: none;
+    }
+
+    .configure_row > img {
+        display: none;
+    }
+
+    .configure{
+        height: 1000px;
+    }
+
+    .hero-text > h3{
+        font-size: 25px;
+    }
+
+    .hero-text > h2{
+        font-size: 35px;
+    }
+
+    .rare_column > h3{
+        font-size: 30px;
+    }
+
+    .rare_column > p{
+        width: 60%;
+    }
+
+    .footer-left > h3{
+        font-size: 30px;
+    }
+
+    .footer-left{
+        width: 50%;
+    }
+
+    .homepage-mens > h3{
+        font-size: 30px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 30px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:901px){
+    div.img-holder {
+        margin-left: 350px;
+    }
+
+    .side-scroll-feature{
+        height: 200px;
+    }
+
+    .img-holder {
+       
+        margin-top: 90px;
+    }
+
+    .side-blocker{
+        height: 240px;
+    }
+
+}
+
+@media screen and (max-width:771px){
+    .hero-text{
+        margin-left: 100px;
+    }
+
+    .hero{
+        height: 600px;
+    }
+    
+    .spacer{
+        height: 300px;
+    }
+
+    .buttons-carosel {
+        display: flex;
+        justify-content: space-between;
+        width: 240px;
+    }
+
+    .index_carosel-option1, .index_carosel-option2, .index_carosel-option3, .index_carosel-option4 {
+        
+        width: 50px;
+        height: 40px;
+    }
+
+    .index_carosel-option1.selected, .index_carosel-option2.selected, .index_carosel-option3.selected, .index_carosel-option4.selected {
+        width: 80px;
+        cursor: initial;
+        height: 40px;
+    }
+
+    .side-blocker {
+        top: 600px;
+    }
+
+    @keyframes sideblocker-in {
+        0% {right: -75%;}
+        100% {right: -30%;}
+    }
+
+    h3.scroll-header{
+        font-size: 20px;
+    }
+
+    p.scroll-text{
+        font-size: 13px
+    }
+
+    .vision-mission > h2{
+        font-size: 40px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 30px;
+    }
+    .vision-mission_column > p{
+        font-size: 15px;
+    }
+
+    .configure > h2{
+        font-size: 40px;
+    }
+
+    .configure_column > h3{
+        font-size: 30px;
+    }
+    .configure_column > p{
+        font-size: 15px;
+    }
+    .vision-mission-readmore{
+        font-size: 15px;
+        width: 140px;
+        height: 40px;
+    }
+    .configure-discover{
+        font-size: 15px;
+        width: 130px;
+        height: 40px;
+    }
+    .vision-mission{
+        height: 700px;
+    }
+    .configure{
+        height: 700px;
+    }
+    div.img-holder{
+        margin-left: 250px;
+    }
+    aside.rare_row > img {
+        width: 330px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width:641px){
+    .footer-left{
+        width: 40%;
+    }
+
+    .footer-left > h4{
+        font-size: 25px;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 15px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 15px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
+    }
+
+    .side-blocker {
+        top: 490px;
+    }
+
+    @keyframes sideblocker-in {
+        0% {right: -75%;}
+        100% {right: -40%;}
+    }
+
+    .homepage-merchcards {
+        
+        height: 300px;
+       
+    }
+
+    .rare {
+       
+        height: 300px;
+        
+    }
+
+    .hero-text > h3{
+        font-size: 20px;
+    }
+
+    .hero-text > h2{
+        font-size: 25px;
+    }
+
+    .hero{
+        height: 500px;
+    }
+
+    .hero-text{
+        margin-top: 100px;
+    }
+
+    .img-holder {
+        height: 110px;
+        margin-top: 115px;
+    }
+}
+
+
+@media screen and (max-width:571px){
+    div.img-holder {
+        margin-left: 190px;
+    }
+    @keyframes sideblocker-in {
+        0% {right: -75%;}
+        100% {right: -35%;}
+    }
+    .side-blocker{
+        top: 480px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:501px){
+    .configure{
+        height: 900px;
+    }
+
+    .rare{
+        height: 200px;
+    }
+
+    aside.rare_row > img{
+        margin-right: 50px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .rare_column > h3{
+        font-size: 20px;
+    }
+
+    .rare_column > p{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .homepage-mens > h3{
+        font-size: 15px;
+    }
+
+    
+
+    .homepage-accesories > h3{
+        font-size: 15px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 15px;
+    }
+
+    h3.scroll-header{
+        font-size: 15px;
+    }
+    
+    p.scroll-text{
+        font-size: 10px;
+    }
+
+    .img-holder {
+        height: 80px;
+        margin-top: 135px;
+    }
+
+    .vision-mission-readmore{
+        margin-left: 60%;
+    }
+
+    .configure{
+        margin-top: 10%;
+    }
+
+    .side-blocker{
+        top:460px;
+    }
+}
+
+@media screen and (max-width:426px){
+    .homepage-merchcards {
+        height: 250px;
+    }
+
+    .footer-left{
+        width: 40%;
+    }
+
+    .footer-left > h4{
+        font-size: 20px;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 10px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 10px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
+    }
+
+    .hero {
+        height: 470px;
+    }
+
+    .side-blocker{
+        top:420px;
+        height: 180px;
+    }
+
+    .side-scroll-feature{
+        height: 150px;
+    }
+
+    .img-holder{
+        margin-top: 85px;
+    }
+
+    div.img-holder{
+        margin-left: 130px;
+    }
+
+    .index_carosel-option1, .index_carosel-option2, .index_carosel-option3, .index_carosel-option4 {
+        width: 30px;
+        height: 20px;
+    }
+
+    .index_carosel-option1.selected, .index_carosel-option2.selected, .index_carosel-option3.selected, .index_carosel-option4.selected {
+        width: 60px;
+        cursor: initial;
+        height: 20px;
+    }
+
+    .buttons-carosel {
+        
+        justify-content: space-between;
+        width: 170px;
+    }
+
+    .discover {
+        font-size: 15px;
+        height: 30px;
+
+    }
+
+    .hero{
+        height: 450px;
+    }
+
+    .vision-mission{
+        height: 800px;
+    }
+
+    .configure{
+        height: 900px;
+    }
+}
