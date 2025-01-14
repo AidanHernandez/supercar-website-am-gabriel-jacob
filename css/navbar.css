@@ -492,6 +492,15 @@ nav > .models-submenu.exit{
    }
 }
 
+@media screen and (max-width:1320px){
+    .nav > h2:first-of-type {
+        font-size: 15px;
+    }
+
+    .nav > h2:last-of-type {
+        font-size: 15px;
+    }
+}
 
 @media screen and (max-width:1201px){
     .hamburger.clicked ~ .menu {
@@ -512,6 +521,25 @@ nav > .models-submenu.exit{
         width: 25%;
        margin-left: 15%;
    }
+
+   #originalImage {
+        visibility: visible;
+        position: absolute;
+        z-index: 1;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 40px;
+        height: 40px;
+        right: 0.9%;
+        border-radius: 200px;
+    }
+}
+
+@media screen and (max-width:1060px){
+    .nav > h2:last-of-type {
+        margin-right: 15%;
+    }
+
 }
 
 
@@ -534,6 +562,19 @@ nav > .models-submenu.exit{
         width: 30%;
        margin-left: 15%;
    }
+}
+
+@media screen and (max-width:950px){
+    .nav > h2:last-of-type {
+        margin-right: 10%;
+    }
+
+    .nav > h4 {
+
+        font-size: 40px;
+        margin-right: 10%;
+    }
+
 }
 
 @media screen and (max-width:801px){
@@ -594,51 +635,106 @@ nav > .models-submenu.exit{
     
 }
 
+@media screen and (max-width:501px){
+    .nav > h2:first-of-type {
+        display: none;
+    }
+    .nav > h2:last-of-type {
+        display: none;
+    }
+}
+
 @media screen and (max-width:451px){
     .hamburger.clicked ~ .menu > h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
     .hamburger.clicked ~ .menu > h3 {
-        font-size: 12px;
+        font-size: 10px;
         
     }
     .models-submenu.clicked > h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
     .models-submenu.clicked > h3 {
-        font-size: 12px;
+        font-size: 10px;
     }
     .models-submenu-nemesis.clicked > h2{
-        font-size: 20px;
+        font-size: 15px;
+        margin-left: 0;
     }
     .models-submenu-nemesis.clicked > h3{
-        font-size: 12px;
+        font-size: 10px;
     }
     .models-submenu-blackwidow.clicked > h2{
-        font-size: 30px;
+        font-size: 15px;
+        margin-left: 0;
     }
     .models-submenu-blackwidow.clicked > h3{
-        font-size: 16px;
+        font-size: 10px;
+       
     }
 
 
     .hamburger.clicked ~ .menu {
         width: 120px;
-        margin-left: 10px;
+        /* height: 100%; */
+        margin-left: 2%;
     }
 
     nav > .models-submenu.clicked{
         width: 152px;
-        margin-left: 50px;
+        margin-left: 14%;
     }
 
     nav > .models-submenu-blackwidow.clicked{      
          width: 180px;
-        margin-left: 28%;
+        margin-left: 34%;
     }
 
     nav > .models-submenu-nemesis.clicked{      
         width: 190px;
-       margin-left: 128px;
+        margin-left: 34%;
+   }
+
+   
+
+}
+
+
+@media screen and (max-width:426px) {
+    nav > .models-submenu-blackwidow.clicked{      
+        width: 141px;
+       margin-left: 34%;
+   }
+
+   nav > .models-submenu-nemesis.clicked{      
+       width: 141px;
+       margin-left: 34%;
+  }
+
+  nav > .models-submenu.clicked{
+    width: 149px;
+    margin-left: 14%;
+    }
+}
+
+@media screen and (max-width:381px) {
+    nav > .models-submenu-blackwidow.clicked{      
+        width: 141px;
+       margin-left: 34%;
+   }
+
+   nav > .models-submenu-nemesis.clicked{      
+       width: 141px;
+       margin-left: 34%;
+  }
+
+  nav > .models-submenu.clicked{
+    width: 120px;
+    margin-left: 18%;
+    }
+
+    nav > .models-submenu-blackwidow.clicked{      
+       margin-left: 33%;
    }
 }
