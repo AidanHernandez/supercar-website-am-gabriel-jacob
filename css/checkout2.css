@@ -149,22 +149,22 @@ margin-left: 3%;
 }
 
 .b5 {
-    margin-right: 7%;
+    margin-right: 3%;
 }
 
 .b6 {
-    margin-right: -9%;
+    margin-right: -3%;
 }
 
 #country {
-    width: 14.5vw;
+    width: 11.5vw;
     font-size: 5vh;
     background-color: #D7D9D7;
     border-radius: 1rem;
 }
 
 #postalcode {
-    width: 12.5vw;
+    width: 13vw;
     font-size: 5vh;
     background-color: #D7D9D7;
     border-radius: 1rem;
@@ -172,14 +172,15 @@ margin-left: 3%;
 
 .b7 {
     margin-right: 11%;
+    margin-left: 2%;
 }
 
 .b8 {
-    margin-right: -3%;
+    margin-right: 2%;
 }
 
 #phonenumber {
-    width: 19.5vw;
+    width: 18.5vw;
     height: 3vw;
     margin-right: 6.5%;
     font-size: 3vh;
@@ -187,9 +188,13 @@ margin-left: 3%;
     border-radius: 1rem;
 }
 
+.b9 {
+    margin-left: 2.5%;
+}
+
 .next {
 height: 7vh;
-width: 15vw;
+width: 11vw;
 font-size: 5vh;
 border: 2px solid;
 border-radius: 1rem;
@@ -199,5 +204,598 @@ margin-left: 35%;
 transition: transform 0.5s;
 }
 
+.next:hover {
+    background-color: #737372;
+}
 
-@media screen and (min-width: 1364px) and (max-width: 1446px)
+
+
+@media screen and (min-width: 1270px) and (max-width: 1446px) {
+
+    .b5 {
+        margin-left: 3%;
+    }
+
+    #city {
+        width: 16vw;
+    }
+
+    #state {
+        width: 16vw;
+    }
+
+    #country {
+        width: 14vw;
+    }
+
+    #postalcode {
+        width: 11vw;
+    }
+
+   .b7 {
+    margin-right: 2%;
+   }
+
+   .b9 {
+    margin-left: 11%;
+   }
+
+   #phonenumber {
+    width: 16vw;
+    font-size: 2vh;
+   }
+
+   .next {
+    height: 6vh;
+    font-size: 3vh;
+    margin-left: -24%;
+   }
+}
+
+
+@media screen and (min-width: 1062px) and (max-width: 1270px) {
+
+    .b5 {
+        margin-left: 3%;
+    }
+
+    #city {
+        width: 16vw;
+    }
+
+    #state {
+        width: 16vw;
+    }
+
+    #country {
+        width: 14vw;
+    }
+
+    #postalcode {
+        width: 11vw;
+    }
+
+   .b7 {
+    margin-right: 2%;
+   }
+
+   .b9 {
+    margin-left: 12%;
+   }
+
+   #phonenumber {
+    width: 15vw;
+    font-size: 2vh;
+   }
+
+   .next {
+    height: 6vh;
+    font-size: 3vh;
+    margin-left: -24%;
+   }
+
+   .images2 {
+    width: 5vw;
+    height: 5vh;
+   }
+}
+
+
+
+@media screen and (min-width: 912px) and (max-width: 1062px) {
+
+    .b5 {
+        margin-left: 3%;
+        font-size: 2.5vh;
+    }
+    .b1 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    .b2 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    .b3 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    .b4 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    .b6 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    .b7 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    .b8 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    .b9 {
+        /* margin-left: 3%; */
+        font-size: 2.5vh;
+    }
+
+    #city {
+        width: 16vw;
+    }
+
+    #state {
+        width: 16vw;
+    }
+
+    #country {
+        width: 14vw;
+    }
+
+    #postalcode {
+        width: 11vw;
+    }
+
+   .b7 {
+    margin-right: 2%;
+   }
+
+   .b9 {
+    margin-left: 12%;
+   }
+
+   #phonenumber {
+    width: 15vw;
+    font-size: 1.5vh;
+   }
+
+   .next {
+    height: 6vh;
+    font-size: 3vh;
+    margin-left: -24%;
+   }
+
+   .images2 {
+    width: 3.5vw;
+    height: 3vh;
+   }
+
+   img {
+    width: 25vw;
+    height: 25vh;
+   }
+   
+}
+
+@media screen and (min-width: 683px) and (max-width: 912px) {
+
+    .b5 {
+        margin-left: 3%;
+        font-size: 2vh;
+    }
+    .b1 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    .b2 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    .b3 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    .b4 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    .b6 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    .b7 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    .b8 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    .b9 {
+        /* margin-left: 3%; */
+        font-size: 2vh;
+    }
+
+    #city {
+        width: 16vw;
+    }
+
+    #state {
+        width: 16vw;
+    }
+
+    #country {
+        width: 14vw;
+    }
+
+    #postalcode {
+        width: 11vw;
+    }
+
+   .b7 {
+    margin-right: 2%;
+   }
+
+   .b9 {
+    margin-left: 12%;
+   }
+
+   #phonenumber {
+    width: 15vw;
+    font-size: 1vh;
+   }
+
+   .next {
+    height: 6vh;
+    font-size: 3vh;
+    margin-left: -24%;
+   }
+
+   .images2 {
+    width: 6vw;
+    height: 4vh;
+   }
+
+   img {
+    width: 20vw;
+    height: 20vh;
+   }
+
+   .s1 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+   .s2 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+   .s3 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+  #firstname {
+    width: 60vw;
+  }
+
+  #lastname {
+    width: 60vw;
+  }
+
+  #adress1 {
+    width: 60vw;
+  }
+
+  #adress2 {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 477px) and (max-width: 683px) {
+
+    .b5 {
+        margin-left: 3%;
+        font-size: 1.5vh;
+    }
+    .b1 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+       
+    }
+
+    .b2 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b3 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b4 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b6 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b7 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b8 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b9 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    #city {
+        width: 16vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+    #state {
+        width: 16vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+    #country {
+        width: 14vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+    #postalcode {
+        width: 11vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+   .b7 {
+    margin-right: 2%;
+   }
+
+   .b9 {
+    margin-left: 12%;
+   }
+
+   #phonenumber {
+    width: 15vw;
+    font-size: 1vh;
+    height: 4vh;
+   }
+
+   .next {
+    height: 5vh;
+    font-size: 1.5vh;
+    margin-left: -24%;
+   }
+
+   .images2 {
+    width: 6vw;
+    height: 3vh;
+   }
+
+   img {
+    width: 20vw;
+    height: 20vh;
+   }
+
+   .s1 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+   .s2 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+   .s3 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+  #firstname {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+
+  #lastname {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+
+  #adress1 {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+
+  #adress2 {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 477px) {
+
+    .b5 {
+        margin-left: 3%;
+        font-size: 1.5vh;
+    }
+    .b1 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+       
+    }
+
+    .b2 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b3 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b4 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b6 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b7 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b8 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    .b9 {
+        /* margin-left: 3%; */
+        font-size: 1.5vh;
+    }
+
+    #city {
+        width: 16vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+    #state {
+        width: 16vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+    #country {
+        width: 14vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+    #postalcode {
+        width: 11vw;
+        height: 4vh;
+        font-size: 1vh;
+    }
+
+   .b7 {
+    margin-right: 2%;
+   }
+
+   .b9 {
+    margin-left: 12%;
+   }
+
+   #phonenumber {
+    width: 15vw;
+    font-size: 1vh;
+    height: 4vh;
+   }
+
+   .next {
+    height: 5vh;
+    font-size: 1.5vh;
+    margin-left: -24%;
+   }
+
+   .images2 {
+    width: 6vw;
+    height: 3vh;
+   }
+
+   img {
+    width: 18vw;
+    height: 18vh;
+   }
+
+   .s1 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+   .s2 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+   .s3 {
+    font-size: 1.5vh;
+    margin-left: 5%;
+   }
+
+  #firstname {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+
+  #lastname {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+
+  #adress1 {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+
+  #adress2 {
+    width: 60vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+}
