@@ -370,3 +370,6 @@ a {
     margin-top: 5%;
 }
 
+.popup:hover {
+    background-color: #737372;
+}
