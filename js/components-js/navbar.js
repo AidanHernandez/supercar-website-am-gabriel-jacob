@@ -40,6 +40,9 @@ function hamburger_click() {
 
   document.getElementById('originalImage').style.scale = '0'
   
+  if(window.matchMedia("(max-width: 1400px)").matches){
+    document.getElementById("menu").style.left="-25%"
+  }
   
   
 
@@ -62,10 +65,31 @@ function hamburger_click() {
 
  
   setTimeout(() =>  document.getElementById("hamburger").classList.add('clicked'), 1400)
-  setTimeout(() =>  document.getElementById("logo").style.width='35px', 1700)
-  setTimeout(() =>  document.getElementById("logo").style.height='35px', 1700)
-  setTimeout(() =>  document.getElementById("exit_nav").style.width='35px', 1700)
-  setTimeout(() =>  document.getElementById("exit_nav").style.height='35px', 1700)
+
+  if(window.matchMedia("(max-width: 1100px)").matches && window.matchMedia("(min-width:571px)").matches){
+    setTimeout(() =>  document.getElementById("logo").style.width='25px', 1700)
+    setTimeout(() =>  document.getElementById("logo").style.height='25px', 1700)
+
+    setTimeout(() =>  document.getElementById("exit_nav").style.width='25px', 1700)
+    setTimeout(() =>  document.getElementById("exit_nav").style.height='25px', 1700)
+  }
+  else if(window.matchMedia("(max-width: 571px)").matches){
+    setTimeout(() =>  document.getElementById("logo").style.width='20px', 1700)
+    setTimeout(() =>  document.getElementById("logo").style.height='20px', 1700)
+
+    setTimeout(() =>  document.getElementById("exit_nav").style.width='20px', 1700)
+    setTimeout(() =>  document.getElementById("exit_nav").style.height='20px', 1700)
+  }
+  else{
+    setTimeout(() =>  document.getElementById("logo").style.width='35px', 1700)
+    setTimeout(() =>  document.getElementById("logo").style.height='35px', 1700)
+
+    setTimeout(() =>  document.getElementById("exit_nav").style.width='35px', 1700)
+    setTimeout(() =>  document.getElementById("exit_nav").style.height='35px', 1700)
+  }
+
+  
+  
 
 
 

@@ -481,6 +481,11 @@ nav > .models-submenu.exit{
         margin-left: 5%;
     }
 
+    nav > .merch-submenu.clicked{
+        width: 20%;
+        margin-left: 5%;
+    }
+
     nav > .models-submenu-blackwidow.clicked{      
          width: 20%;
         margin-left: 10%;
@@ -490,6 +495,55 @@ nav > .models-submenu.exit{
         width: 20%;
        margin-left: 10%;
    }
+}
+
+@media screen and (max-width:1400px){
+    .nav > .menu {
+        left: -25%;
+        transition: left 1s;
+    }
+    
+
+
+
+    nav > .models-submenu{
+        position: absolute;
+        display: none;
+        z-index: 100;
+    }
+    
+    nav > .models-submenu.almost-clicked{
+        display: flex;
+        width: 1%;
+        opacity: 0;
+        
+        left: -2%;
+    
+    }
+    
+    
+    
+    nav > .models-submenu.clicked{
+        transition: left 1s;
+        left:18%;
+        display: flex;
+        flex-flow: column;
+        color: white;
+        height: 100vh;
+        width: 20%;
+        align-items: center;
+        opacity: 1;
+        background: #393737;
+        transition: left 1s;
+        
+    }
+    
+    nav > .models-submenu.back{
+        transition: left 1s;
+        left: -2%;
+        z-index: 3;
+    }
+    
 }
 
 @media screen and (max-width:1320px){
@@ -508,6 +562,11 @@ nav > .models-submenu.exit{
     }
 
     nav > .models-submenu.clicked{
+        width: 25%;
+        margin-left: 5%;
+    }
+
+    nav > .merch-submenu.clicked{
         width: 25%;
         margin-left: 5%;
     }
@@ -533,7 +592,49 @@ nav > .models-submenu.exit{
         right: 0.9%;
         border-radius: 200px;
     }
+
+
+
+    nav > .models-submenu{
+        position: absolute;
+        display: none;
+        z-index: 100;
+    }
+    
+    nav > .models-submenu.almost-clicked{
+        display: flex;
+        width: 1%;
+        opacity: 0;
+        
+        left: -7%;
+    
+    }
+    
+    
+    
+    nav > .models-submenu.clicked{
+        transition: left 1s;
+        left:18%;
+        display: flex;
+        flex-flow: column;
+        color: white;
+        width: 25%;
+       
+        align-items: center;
+        opacity: 1;
+        background: #393737;
+        transition: left 1s;
+        
+    }
+    
+    nav > .models-submenu.back{
+        transition: left 1s;
+        left: -7%;
+        z-index: 3;
+    }
 }
+
+
 
 @media screen and (max-width:1060px){
     .nav > h2:last-of-type {
@@ -549,6 +650,11 @@ nav > .models-submenu.exit{
     }
 
     nav > .models-submenu.clicked{
+        width: 25%;
+        margin-left: 5%;
+    }
+
+    nav > .merch-submenu.clicked{
         width: 25%;
         margin-left: 5%;
     }
@@ -588,6 +694,11 @@ nav > .models-submenu.exit{
         margin-left: 11%;
     }
 
+    nav > .merch-submenu.clicked{
+        width: 33%;
+        margin-left: 11%;
+    }
+
     nav > .models-submenu-blackwidow.clicked{      
          width: 39%;
         margin-left: 28%;
@@ -601,6 +712,45 @@ nav > .models-submenu.exit{
    .left-bar:has(+ .hamburger.clicked){
     width: 5%;
    }
+
+
+   nav > .models-submenu{
+    position: absolute;
+    display: none;
+    z-index: 100;
+}
+
+nav > .models-submenu.almost-clicked{
+    display: flex;
+    width: 1%;
+    opacity: 0;
+    
+    left: -13%;
+
+}
+
+
+
+nav > .models-submenu.clicked{
+    transition: left 1s;
+    left:18%;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    width: 33%;
+   
+    align-items: center;
+    opacity: 1;
+    background: #393737;
+    transition: left 1s;
+    
+}
+
+nav > .models-submenu.back{
+    transition: left 1s;
+    left: -13%;
+    z-index: 3;
+}
 }
 
 @media screen and (max-width:621px){
@@ -620,6 +770,15 @@ nav > .models-submenu.exit{
     .models-submenu.clicked > h3 {
         font-size: 16px;
     }
+
+    .merch-submenu.clicked > h2 {
+        font-size: 25px;
+    }
+
+    .merch-submenu.clicked > h3 {
+        font-size: 16px;
+    }
+
     .models-submenu-nemesis.clicked > h2{
         font-size: 30px;
     }
@@ -658,6 +817,16 @@ nav > .models-submenu.exit{
     .models-submenu.clicked > h3 {
         font-size: 10px;
     }
+
+    .merch-submenu.clicked > h2 {
+        font-size: 15px;
+    }
+
+    .merch-submenu.clicked > h3 {
+        font-size: 10px;
+    }
+
+
     .models-submenu-nemesis.clicked > h2{
         font-size: 15px;
         margin-left: 0;
@@ -686,6 +855,11 @@ nav > .models-submenu.exit{
         margin-left: 14%;
     }
 
+    nav > .merch-submenu.clicked{
+        width: 152px;
+        margin-left: 14%;
+    }
+
     nav > .models-submenu-blackwidow.clicked{      
          width: 180px;
         margin-left: 34%;
@@ -696,7 +870,50 @@ nav > .models-submenu.exit{
         margin-left: 34%;
    }
 
-   
+   .hamburger {
+       
+        width: 50px;
+        height: 50px;
+
+    }
+
+    nav > .models-submenu{
+        position: absolute;
+        display: none;
+        z-index: 100;
+    }
+    
+    nav > .models-submenu.almost-clicked{
+        display: flex;
+        width: 1%;
+        opacity: 0;
+        
+        left: -16%;
+    
+    }
+    
+    
+    
+    nav > .models-submenu.clicked{
+        transition: left 1s;
+        left:17%;
+        display: flex;
+        flex-flow: column;
+        color: white;
+        width: 152px;
+       
+        align-items: center;
+        opacity: 1;
+        background: #393737;
+        transition: left 1s;
+        
+    }
+    
+    nav > .models-submenu.back{
+        transition: left 1s;
+        left: -16%;
+        z-index: 3;
+    }
 
 }
 
@@ -716,6 +933,11 @@ nav > .models-submenu.exit{
     width: 149px;
     margin-left: 14%;
     }
+
+    nav > .merch-submenu.clicked{
+        width: 149px;
+        margin-left: 14%;
+    }
 }
 
 @media screen and (max-width:381px) {
@@ -732,6 +954,11 @@ nav > .models-submenu.exit{
   nav > .models-submenu.clicked{
     width: 120px;
     margin-left: 18%;
+    }
+
+    nav > .merch-submenu.clicked{
+        width: 120px;
+        margin-left: 18%;
     }
 
     nav > .models-submenu-blackwidow.clicked{      
