@@ -517,29 +517,30 @@ h2 {
 
 @media screen and (min-width: 758px ) and (max-width: 924px) {
   .popup {
-    width: 13vw;
-    margin-left: 46%;
+    width: 12vw;
+    margin-left: 40%;
+    font-size: 1.5vh;
   }
 
   img {
     width: 30vw;
-    height: 35vh;
+    height: 30vh;
   }
 
   .box1 {
-    height: 48vh
+    height: 43vh
   }
 
   .box2 {
-    height: 48vh
+    height: 43vh
   }
 
   .box3 {
-    height: 48vh
+    height: 43vh
   }
 
   .box4 {
-    height: 48vh
+    height: 43vh
   }
 
   .color > button{
@@ -554,8 +555,92 @@ h2 {
   }
 
   .size-select{
-    margin-left: 26%;
+    margin-left: 18%;
     display: flex;
+    font-size: 1vh;
+  }
+
+  .exit {
+    height: 4vh;
+  }
+}
+
+@media screen and (min-width: 516px ) and (max-width: 758px) {
+  .popup {
+    width: 12vw;
+    margin-left: 40%;
+    font-size: 1vh;
+  }
+
+  img {
+    width: 30vw;
+    height: 30vh;
+  }
+
+  .box1 {
+    height: 35vh
+  }
+
+  .box2 {
+    height: 35vh
+  }
+
+  .box3 {
+    height: 35vh
+  }
+
+  .box4 {
+    height: 35vh
+  }
+
+  .color > button{
+    height: 3vh;
+    width: 3vh;
+  }
+
+  a.viewcart{
+    font-size: 4vh;
+    height: 5vh;
+
+  }
+
+  .size-select{
+    margin-left: 11%;
+    display: flex;
+    
+  }
+
+  .exit {
+    height: 4vh;
+  }
+
+  .size-select > button:first-of-type {
+    background-color: white;
+    width: 5vw;
+    height: 3vh;
+    font-size: 1.5vh;
+  
+  }
+
+  .size-select > button:nth-of-type(2) {
+   
+    width: 5vw;
+    height: 3vh;
+    font-size: 1.5vh;
+    text-align: center;
+  }
+
+  .size-select > button:last-of-type {
+    background-color: white;
+    width: 5vw;
+    height: 3vh;
+    font-size: 1.5vh;
+
+  }
+
+  .underimg p {
     font-size: 2vh;
   }
+
+ 
 }
