@@ -7,6 +7,21 @@ body {
 }
 
 
+.hero2{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  margin-top: 5%;  
+  height: 85vh;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../img/nemesis-img/7_25-Lux-Black-Nemesis_rr34-1024x576.png);
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+  
+}
 
 html {
   text-rendering: optimizeLegibility;
@@ -68,7 +83,7 @@ html {
   background: linear-gradient(to bottom, #333, black);
 border: 1px solid #444;
 width: 20%;
-height: 400px;
+height: fit-content;
 margin: 10px;
 
 display: flex;
@@ -295,7 +310,7 @@ justify-content: center;
 }
 
 .indented {
-  text-indent: 50px; /* Adds indentation to the second heading */
+  text-indent: 50px; /* adds indentation to the second heading */
 }
 
 .general-99{
@@ -308,155 +323,84 @@ justify-content: center;
   flex-direction: row-reverse;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .text-section,
-  .image-section {
-      max-width: 100%;
-  }
-
-  .big-text {
-      font-size: 60px;
-  }
-}
-
-@media (max-width: 625px) {
-  body {
-      font-size: xx-small;
-  }
-
-  .general {
-      font-size: 1.5rem;
-  }
-
-  .big-text {
-      font-size: 40px;
-  }
-}
-
 
 /* pls never have me do this again  */
 
 
+@media screen and (min-width:100px) and (max-width:2330px){
+  .hero-text{
+      top:5%
+  }
+}
 
  
-@media (max-width: 1024px) {
-  .performance-section h2 {
-    font-size: 1.8rem;
+@media screen and (min-width:100px) and (max-width:375px){
+  body{
+    margin-right: 15%;
+      overflow-x: hidden !important;
+      margin-left: 15%;
+  }
+  
+  .innovation-container img{
+    width: 50%;
   }
 
-  .car-profile img {
-    width: 90%;
+
+  .description-99{
+    font-size: 6px;
   }
 
-  .stats {
-    font-size: 2rem;
+  .big-text-99{
+    font-size: 14px;
+    transform: translate( 0%, 100px,);
   }
 
-  .vision-mission-1 > h2 {
-    font-size: 50px;
+  .general-99{
+    font-size: 14px;
   }
 
-  .vision-mission_column > h3 {
-    font-size: 40px;
-  }
-
-  .vision-mission_column > p {
+  .six p h2{
     font-size: 20px;
   }
-}
 
-@media (max-width: 768px) {
-  .car-profile {
-    flex-direction: column;
-    align-items: center;
+  .sven p h2{
+    
+    transform: translate(0%, 100%,);
   }
 
-  .stats {
-    font-size: 1.8rem;
+  .sven img{
+    transform: translate(0%, -100%,);
   }
 
-  .performance-section h2 {
-    font-size: 1.5rem;
+  .feature-box p {
+    font-size: 10px;
+    width: 50px;
+    height: -100%;
+    
+  }
+  
+  .feature-box h2 {
+    font-size: 10px;
+    width: 50px;
+    height: -100%;
   }
 
-  .vision-mission-1 > h2 {
-    font-size: 40px;
+    
+  .feature-box h2 {
+    font-size: 10px;
+    width: 50px;
+    height: -100%;
   }
 
-  .vision-mission_column > h3 {
-    font-size: 35px;
-  }
-
-  .vision-mission_column > p {
-    font-size: 18px;
-  }
-
-  .vision-mission-readmore {
-    width: 40%;
-    margin-left: 50%;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: small;
-  }
-
-  .performance-section h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .car-profile img {
+  .performance-section p{
+    height: 50px;
     width: 100%;
+    font-size: 10px;
+    
   }
 
-  .stats {
-    font-size: 1.5rem;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .vision-mission-1 {
-    height: auto;
-    align-items: center;
-    text-align: center;
-  }
-
-  .vision-mission-1 > h2 {
-    font-size: 30px;
-    margin-right: 0;
-  }
-
-  .vision-mission_column > h3 {
-    font-size: 25px;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .vision-mission_column > p {
-    font-size: 16px;
-    margin-left: 0;
-    width: 90%;
-    text-align: center;
-  }
-
-  .vision-mission-readmore {
-    width: 60%;
-    margin: 10% auto;
-  }
-
-  .general-99 {
-    font-size: 1.2rem;
-  }
-
-  .big-text-99 {
-    font-size: 50px;
+  .cta-button{
+    
   }
 }
+
