@@ -373,3 +373,9 @@ a {
 .popup:hover {
     background-color: #737372;
 }
+
+@media screen and (min-width:1250) and (max-width:1749) {
+    .b1 {
+        background-color: red;
+    }
+}
