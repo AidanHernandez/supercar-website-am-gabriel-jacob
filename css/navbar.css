@@ -754,9 +754,7 @@ nav > .models-submenu.back{
 }
 
 @media screen and (max-width:621px){
-    body{
-        background-color: green;
-    }
+   
     .hamburger.clicked ~ .menu > h2 {
         font-size: 30px;
     }
