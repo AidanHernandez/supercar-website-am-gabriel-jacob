@@ -355,3 +355,270 @@ a {
 .index:hover {
     background-color: #737372;
 }
+
+
+@media screen and (min-width: 2572px) and (max-width:4268px) {
+    img {
+        height: 25vh;
+    }
+
+    .row2 {
+        font-size: 3vh;
+    }
+
+    #nameoncard {
+        width: 75vw;
+    }
+
+    #cardnumb {
+        font-size: 1.5vh;
+    }
+
+    #expodate {
+        font-size: 1.5vh;
+    }
+
+    .row3 {
+        margin-right: 5%;
+    }
+
+    .row4 {
+        margin-right: 7%;
+    }
+
+    #postalcode {
+        width: 13vw;
+    }
+
+    .popup {
+        width: 32vw;
+        margin-left: 35%;
+    }
+
+    .popup .popuptext {
+        width: 45vw;
+        padding: 2%;
+    }
+
+}
+
+
+@media screen and (min-width: 1756px) and (max-width: 2572px) {
+    
+    
+    img {
+        height: 25vh;
+    }
+
+    .row2 {
+        font-size: 2.5vh;
+    }
+
+    .column3 {
+        font-size: 2.5vh;
+    }
+
+    #firstname {
+        width: 70vh;
+    }
+
+    #lastname {
+        width: 70vh;
+    }
+
+    #adress1{
+        width: 70vh;
+    }
+
+    #adress2 {
+        width: 70vh;
+    }
+
+    #nameoncard {
+        width: 80vw;
+    }
+
+    #cardnumb {
+        font-size: 1.5vh;
+    }
+
+    #expodate {
+        font-size: 1.5vh;
+    }
+
+    .row3 {
+        margin-right: 7%;
+        font-size: 2.5vh;
+    }
+
+    .row4 {
+        margin-right: 9%;
+        font-size: 2.5vh
+    }
+
+    #postalcode {
+        width: 12vw;
+    }
+
+    .popup {
+        width: 47vw;
+        margin-left: 28%;
+    }
+
+    .popup .popuptext {
+        width: 65vw;
+        padding: 2%;
+    }
+
+    #phonenumber {
+        width: 30vw;
+        font-size: 2vh;
+    }
+
+    .images2 {
+        height: 4vh;
+    }
+}
+
+
+@media screen and (min-width: 1116px) and (max-width: 1756px) {
+    
+    
+    img {
+        height: 20vh;
+    }
+
+    .row2 {
+        font-size: 2vh;
+    }
+
+    .column3 {
+        font-size: 2.5vh;
+        margin-left: 5%;
+    }
+
+    #firstname {
+        width: 45vh;
+    }
+
+    #lastname {
+        width: 45vh;
+    }
+
+    #adress1{
+        width: 45vh;
+    }
+
+    #adress2 {
+        width: 45vh;
+    }
+
+    #nameoncard {
+        width: 80vw;
+    }
+
+    #city {
+        height: 4vh;
+    }
+
+    #state {
+        height: 4vh;
+    }
+
+    #country {
+        height: 4vh;
+    }
+
+    #postalcode {
+        height: 4vh;
+        width: 9vw;
+    }
+
+    .b11 {
+        margin-right: 5%;
+    }
+    #cardnumb {
+        font-size: 1.5vh;
+        width: 15vw;
+    }
+
+    .b1 {
+        margin-left: 15% ;
+    }
+
+    .b3 {
+        margin-right: 13%;
+    }
+    #expodate {
+        font-size: 1.5vh;
+        width: 13vw;
+    }
+
+    #cvv {
+        width: 12vw;
+    }
+
+    .row3 {
+        margin-right: 7%;
+        font-size: 2vh;
+    }
+
+    .row4 {
+        margin-right: 9%;
+        font-size: 2vh
+    }
+
+    .row5 {
+        font-size: 2vh;
+    }
+
+    .popup {
+        width: 42vw;
+        margin-left: 28%;
+        font-size: 2.5vh;
+        height:  3.5vh;
+    }
+
+    .s1 {
+        font-size: 2vh;
+    }
+
+    .s2 {
+        font-size: 2vh;
+    }
+    .s3 {
+        font-size: 2vh;
+    }
+
+    .popup .popuptext {
+        width: 65vw;
+        padding: 2%;
+    }
+
+    #phonenumber {
+        width: 30vw;
+        font-size: 2vh;
+        height: 4vh;
+    }
+
+    .images2 {
+        height: 3vh;
+        width: 3vh;
+    }
+
+    .column2 {
+        font-size: 2.5vh;
+    }
+
+    #nameoncard {
+    height: 4vh;
+    }
+
+    h1 {
+        font-size: 3.5vh;
+    }
+    h2 {
+        font-size: 3.5vh;
+    }
+}
+
