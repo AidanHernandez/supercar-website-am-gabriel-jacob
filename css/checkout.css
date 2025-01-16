@@ -155,6 +155,10 @@ h1 {
     margin-left: 6%;
 }
 
+.exit {
+  margin-left: 10%;
+}
+
 @media screen and (min-width: 1364px) and (max-width: 1446px) {
 
     #nameoncard {
