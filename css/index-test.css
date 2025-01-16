@@ -421,7 +421,10 @@ body{
 .homepage-accesories{
 
     display: flex;
-    background-image: url(../img/homepage-img/placeholder.webp);
+    background-image: url(../img/homepage-img/backpack.png);
+    background-position: center;
+    background-size: contain;
+    
     width: calc(100%/3.3);
     justify-content: center;
     transition: width 0.7s, opacity 0.7s;
