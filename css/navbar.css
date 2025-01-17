@@ -5,6 +5,7 @@
 body{
     font-family: "Nixie One", system-ui;
     margin: 0px;
+    
 }
 
 
@@ -462,6 +463,45 @@ nav > .models-submenu.exit{
     right: 0.9%;
     border-radius: 200px;
 }
+
+.menu > h3:hover{
+    cursor: pointer;
+    font-weight: 100;
+    animation: example 0.1s forwards;
+    
+}
+
+@keyframes example {
+    0%   {font-weight: 100;}
+    25%  {font-weight: 400;}
+    50%  {font-weight: 600;}
+    100% {font-weight: 900;}
+  }
+
+.models-submenu > h3:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.models-submenu-blackwidow > h3:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.models-submenu-nemesis > h3:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.merch-submenu > h3:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+h3{
+    font-weight: normal;
+}
+
 
 @media screen and (max-width:1440px){
     .pfp{
