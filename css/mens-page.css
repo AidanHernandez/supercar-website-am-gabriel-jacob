@@ -370,24 +370,24 @@ h2 {
   }
 
   img {
-    width: 30vw;
-    height: 50vh;
+    width: 35vw;
+    height: 60vh;
   }
 
   .box1 {
-    height: 65vh
+    height: 75vh
   }
 
   .box2 {
-    height: 65vh
+    height: 75vh
   }
 
   .box3 {
-    height: 65vh
+    height: 75vh
   }
 
   .box4 {
-    height: 65vh
+    height: 75vh
   }
 
   .color > button{
@@ -396,15 +396,15 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1268px ) and (max-width: 1417px) {
+@media screen and (min-width: 1268px) and (max-width: 1417px) {
   .popup {
     width: 7vw;
     margin-left: 52%;
   }
 
   img {
-    width: 30vw;
-    height: 45vh;
+    width: 70vw;
+    height: 60vh;
   }
 
   .box1 {
