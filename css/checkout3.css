@@ -510,3 +510,81 @@ a {
    } 
 
 }
+
+@media screen and (min-width: 460px) and (max-width: 748px) {
+    img {
+        height: 15vh;
+    }
+
+    .exit {
+        
+    }
+
+    .second {
+        font-size: 1.5vh;
+    }
+
+    .row2 {
+        font-size: 2vh;
+    }
+
+    #nameoncard {
+        width: 75vw;
+    }
+
+    #expodate {
+        width: 8vw;
+    }
+
+    #firstname {
+        width: 70vw;
+    }
+
+    #lastname {
+        width: 70vw;
+    }
+
+    #adress1 {
+        width: 69vw;
+    }
+
+    #adress2 {
+        width: 69vw;
+    }
+
+    .column3 {
+        margin-left: 10%;
+        font-size: 2vh;
+    }
+
+    .row3 {
+        margin-right: 2%;
+        font-size: 2vh;
+    }
+
+    #postalcode {
+        width: 12vw;
+    }
+
+    .row4 {
+        margin-right: 5%;
+        font-size: 2vh;
+    }
+
+    #phonenumber {
+        width: 30vw;
+        font-size: 2vh;
+    }
+
+    .row5 {
+        font-size: 2.5vh;
+    }
+
+   .popup {
+    width: 34vw;
+    margin-left: 32%;
+    font-size: 3vh;
+    height: 4vh;
+   } 
+
+}
